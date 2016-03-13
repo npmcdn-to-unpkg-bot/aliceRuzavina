@@ -15,25 +15,33 @@ app.config(function($routeProvider) {
 		controller: 'AboutCtrl as ctrl'
 	})
 	.when('/fashion-projects', {
-		templateUrl: 'templates/fashion.html',
+		templateUrl: 'templates/fashion-projects.html',
 		controller: 'FashionCtrl as ctrl'
+	})
+	.when('/textile', {
+		templateUrl: 'templates/textiles.html',
+		controller: 'TextileCtrl as ctrl'
+	})
+    .when('/illustration', {
+		templateUrl: 'templates/illustration.html',
+		controller: 'IllustrationCtrl as ctrl'
 	})
 	.when('/photography', {
 		templateUrl: 'templates/photography.html',
-		controller: 'OtherWorkCtrl as ctrl'
+		controller: 'PhotographyCtrl as ctrl'
 	})
     .when('/artworks', {
 		templateUrl: 'templates/artworks.html',
-		controller: 'OtherWorkCtrl as ctrl'
+		controller: 'ArtworksCtrl as ctrl'
 	})
-	// .when('/fashion/:projectId', {
-	// 	templateUrl: 'templates/project.html',
-	// 	controller: 'ProjectCtrl as ctrl'
-	// })
+	.when('/fashion-projects/:projectId', {
+		templateUrl: 'templates/project.html',
+		controller: 'ProjectCtrl as ctrl'
+	})
 	.otherwise({
 		redirectTo: '/home'
 	});
 });
 
 $(document).ready(function() {
-}
+})
