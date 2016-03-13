@@ -1,1 +1,88 @@
+.primary {
+	.name{
+		width: 100%;
+	}
+	.social-media,
+    .name {
+	    display: block;
+    }
+    .social-media {
+    	width: 80%;
+    	margin-right: auto;
+    	margin-left: auto;
+    	list-style: none;
+    	text-align: center;
+    	padding: 0;
+    	.sm {
+    		display: inline-block;
+    		img {
+    			width: 100%;
+    		}
+    	}
+    }
+}
 
+.secondary {
+	z-index: 5;
+	background: rgba(100, 100, 100, 0.5);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-top: 0.5em;
+	// padding-bottom: 0.5em;
+	.home img {
+	    width: 5em;
+    }
+    .social-media,
+    .name {
+	    display: inline-block;
+    }
+    .home {
+    	position: fixed;
+    	bottom: 1em;
+    	left: 1em;
+    }
+    .name {
+        width: 60%;
+    }
+    .social-media {
+	max-width: 5em;
+	list-style: none;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	.sm {
+		float: left;
+		img {
+			width: 100%;
+		}
+	}
+	.sm:nth-child(1),
+	.sm:nth-child(3) {
+		padding-right: 1em;
+	}
+	.sm:nth-child(1),
+	.sm:nth-child(2) {
+		padding-bottom: 0.7em;
+	}
+}
+}
+
+main {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 6em;
+}
+
+.fashion-projects {
+	ul {
+		list-style: none;
+		padding: 0;
+		img {
+			width: 100%;
+		}
+	}
+
+}

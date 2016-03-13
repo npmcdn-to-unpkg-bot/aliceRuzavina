@@ -353,4 +353,69 @@ td,
 th {
   padding: 0; }
 
+.primary .name {
+  width: 100%; }
+.primary .social-media,
+.primary .name {
+  display: block; }
+.primary .social-media {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+  text-align: center;
+  padding: 0; }
+  .primary .social-media .sm {
+    display: inline-block; }
+    .primary .social-media .sm img {
+      width: 100%; }
+
+.secondary {
+  z-index: 5;
+  background: rgba(100, 100, 100, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 0.5em; }
+  .secondary .home img {
+    width: 5em; }
+  .secondary .social-media,
+  .secondary .name {
+    display: inline-block; }
+  .secondary .home {
+    position: fixed;
+    bottom: 1em;
+    left: 1em; }
+  .secondary .name {
+    width: 60%; }
+  .secondary .social-media {
+    max-width: 5em;
+    list-style: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0; }
+    .secondary .social-media .sm {
+      float: left; }
+      .secondary .social-media .sm img {
+        width: 100%; }
+    .secondary .social-media .sm:nth-child(1),
+    .secondary .social-media .sm:nth-child(3) {
+      padding-right: 1em; }
+    .secondary .social-media .sm:nth-child(1),
+    .secondary .social-media .sm:nth-child(2) {
+      padding-bottom: 0.7em; }
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 6em; }
+
+.fashion-projects ul {
+  list-style: none;
+  padding: 0; }
+  .fashion-projects ul img {
+    width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */
