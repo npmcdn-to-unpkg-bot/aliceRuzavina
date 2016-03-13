@@ -353,22 +353,49 @@ td,
 th {
   padding: 0; }
 
-.primary .name {
-  width: 100%; }
-.primary .social-media,
-.primary .name {
-  display: block; }
-.primary .social-media {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  list-style: none;
-  text-align: center;
-  padding: 0; }
-  .primary .social-media .sm {
-    display: inline-block; }
-    .primary .social-media .sm img {
-      width: 100%; }
+.primary {
+  overflow: auto; }
+  .primary .name {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (min-width: 30em) and (max-width: 38em) {
+      .primary .name {
+        width: 70%; } }
+    @media only screen and (min-width: 38em) {
+      .primary .name {
+        float: left;
+        width: 60%;
+        margin-right: 5%;
+        margin-left: 5%; } }
+    @media only screen and (min-width: 56.25em) {
+      .primary .name {
+        width: 55%;
+        margin-left: 10%; } }
+  .primary .social-media,
+  .primary .name {
+    display: block; }
+  .primary .social-media {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+    text-align: center;
+    padding: 0; }
+    @media only screen and (min-width: 38em) {
+      .primary .social-media {
+        float: left;
+        width: 30%; } }
+    @media only screen and (min-width: 30em) and (max-width: 38em) {
+      .primary .social-media {
+        width: 60%; } }
+    .primary .social-media .sm {
+      display: inline-block;
+      width: 14%; }
+      .primary .social-media .sm:nth-child(n) {
+        margin-right: 8%; }
+      .primary .social-media .sm:nth-child(4n) {
+        margin-right: 0; }
 
 .secondary {
   z-index: 5;
@@ -405,17 +432,100 @@ th {
     .secondary .social-media .sm:nth-child(2) {
       padding-bottom: 0.7em; }
 
-main {
+.fashion, .textile, .artwork, .photography, .about, .project, .illustration {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 6em; }
+  top: 7em; }
 
-.fashion-projects ul {
+.artist-info {
+  overflow: auto; }
+
+@media only screen and (min-width: 30em) and (max-width: 38em) {
+  .about {
+    width: 90%; } }
+@media only screen and (min-width: 38em) and (max-width: 56.25em) {
+  .about {
+    width: 80%; } }
+@media only screen and (min-width: 56.25em) {
+  .about {
+    width: 60%; } }
+.about .alice-photo, .about .bio {
+  display: block; }
+  @media only screen and (min-width: 45em) {
+    .about .alice-photo, .about .bio {
+      float: left; } }
+.about .alice-photo {
+  text-align: center;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto; }
+  @media only screen and (min-width: 30em) and (max-width: 45em) {
+    .about .alice-photo {
+      width: 40%;
+      margin-right: auto;
+      margin-left: auto; } }
+  @media only screen and (min-width: 45em) {
+    .about .alice-photo {
+      width: 35%;
+      margin-right: 5%; } }
+  .about .alice-photo img {
+    width: 100%; }
+.about .bio {
+  width: 100%; }
+  @media only screen and (min-width: 30em) and (max-width: 45em) {
+    .about .bio {
+      width: 100%; } }
+  @media only screen and (min-width: 45em) {
+    .about .bio {
+      overflow: auto;
+      width: 60%; } }
+  .about .bio .email {
+    font-weight: bold; }
+.about .cv h3 {
+  border-bottom: 1px solid black; }
+.about .cv .left-column, .about .cv .right-column {
+  width: 100%; }
+  @media only screen and (min-width: 52.5em) {
+    .about .cv .left-column, .about .cv .right-column {
+      float: left;
+      width: 45%; } }
+@media only screen and (min-width: 52.5em) {
+  .about .cv .left-column {
+    margin-right: 10%; } }
+
+@media only screen and (min-width: 30em) and (max-width: 38em) {
+  .fashion {
+    width: 60%; } }
+@media only screen and (min-width: 38em) and (max-width: 56.25em) {
+  .fashion {
+    width: 80%; } }
+@media only screen and (min-width: 56.25em) {
+  .fashion {
+    width: 70%; } }
+.fashion .grid {
   list-style: none;
   padding: 0; }
-  .fashion-projects ul img {
+  @media only screen and (min-width: 38em) and (max-width: 56.25em) {
+    .fashion .grid .icon {
+      width: 45%;
+      float: left; }
+      .fashion .grid .icon:nth-child(n) {
+        margin-bottom: 10%;
+        margin-right: 10%; }
+      .fashion .grid .icon:nth-child(2n) {
+        margin-right: 0; } }
+  @media only screen and (min-width: 56.25em) {
+    .fashion .grid .icon {
+      width: 30%;
+      float: left; }
+      .fashion .grid .icon:nth-child(n) {
+        margin-bottom: 5%;
+        margin-right: 5%; }
+      .fashion .grid .icon:nth-child(3n) {
+        margin-right: 0; } }
+  .fashion .grid img {
     width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

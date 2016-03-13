@@ -11,3 +11,24 @@
 		}
 	}
 }
+
+@mixin sm-grid ($qty, $margin) {
+	width: ((80% - (( $qty - 1) * $margin )) / $qty);
+    &:nth-child(n) {
+    	margin-right: $margin;
+    }
+    &:nth-child(#{$qty}n) {
+    	margin-right: 0;
+    }
+}
+
+@mixin icon-grid ($qty, $margin) {
+	width: ((100% - (( $qty - 1) * $margin )) / $qty);
+    &:nth-child(n) {
+    	margin-bottom:  $margin;
+    	margin-right: $margin;
+    }
+    &:nth-child(#{$qty}n) {
+    	margin-right: 0;
+    }
+}
