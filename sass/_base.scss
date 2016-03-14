@@ -1,21 +1,30 @@
 .primary {
 	overflow: auto;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	@include break(30em, 38em) {
+		width: 80%;
+	}
+	@include break(38em) {
+		width: 70%;
+	}
 	.name{
-		width: 90%;
+		// width: 90%;
 		margin-left: auto;
 		margin-right: auto;
-		@include break(30em, 38em) {
-			width: 70%;
-		}
+		// @include break(30em, 38em) {
+		// 	width: 70%;
+		// }
 		@include break(38em) {
 			float: left;
-			width: 60%;
-			margin-right: 5%;
-			margin-left: 5%;
+			width: 50%;
+            margin-right: 5%;
 		}
 		@include break(56.25em) {
 			width: 55%;
-            margin-left: 10%;
+			max-width: 28.125em;
 		}
 	}
 	.social-media,
@@ -23,15 +32,14 @@
 	    display: block;
     }
     .social-media {
-    	// @include break(56.25em) {
-    	// 	width: 
     	@include break(38em) {
 			float: left;
-			width: 30%;
+			width:15em;
+			text-align: right;
 		}
-    	width: 70%;
+    	width: 15em;
     	@include break(30em, 38em) {
-			width: 60%;
+			width: 15em;
 		}
     	margin-right: auto;
     	margin-left: auto;
@@ -67,9 +75,12 @@
     	position: fixed;
     	bottom: 1em;
     	left: 1em;
+    	@include break(38em) {
+    		position: absolute;
+    	}
     }
     .name {
-        width: 60%;
+        width: 20em;
     }
     .social-media {
 	max-width: 5em;
@@ -200,4 +211,15 @@
 		}
 	}
 
+}
+
+.textile {
+	.img-carousel {
+		height: 32em;
+		display: inline-block;
+		position: absolute;
+		img {
+			height: 100%;
+		}
+	}
 }

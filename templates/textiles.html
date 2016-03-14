@@ -10,5 +10,10 @@
 </header>
 
 <main class="textile">
-	<section class="photo-carousel"></section>
+	<section class="photo-carousel">
+	<h2>{{ ctrl.works.Title}}</h2>
+		<div class="img-carousel" ng-repeat="img in ctrl.works.Images track by $index">
+		    <img src="{{img}}">
+		</div>
+	</section>
 </main>

@@ -4,18 +4,19 @@ function TextileCtrl($routeParams, $location) {
 	this.$location = $location;
 	this.currentPath = $location.path();
 	this.works = TEXTILE_DATA;
+	// this.imgs = this.works.Images;
+    console.log(this.works[0]);
 }
 
-TextileCtrl.prototype.getWorks = function() {
-	return this.works;
-
-};
+// TextileCtrl.prototype.getWorks = function() {
+// 	return this.works;
+// };
 
 // TextileCtrl.prototype.getWork = function(id) {
 // 	return this.works.filter(function(work) {return work.ID === id}) [0];
 // }
 
 var TEXTILE_DATA = {
-	"Title": "Textile Works",
-	"Images": ["images/album_cover_riso.jpg", "images/album_cover_riso.jpg", "images/album_cover_riso.jpg"]
+	"Images" :["images/album_cover_riso.jpg", "images/album_cover_riso.jpg", "images/album_cover_riso.jpg"],
+	"Title": "Textiles"
 }

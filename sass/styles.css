@@ -354,29 +354,34 @@ th {
   padding: 0; }
 
 .primary {
-  overflow: auto; }
+  overflow: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  @media only screen and (min-width: 30em) and (max-width: 38em) {
+    .primary {
+      width: 80%; } }
+  @media only screen and (min-width: 38em) {
+    .primary {
+      width: 70%; } }
   .primary .name {
-    width: 90%;
     margin-left: auto;
     margin-right: auto; }
-    @media only screen and (min-width: 30em) and (max-width: 38em) {
-      .primary .name {
-        width: 70%; } }
     @media only screen and (min-width: 38em) {
       .primary .name {
         float: left;
-        width: 60%;
-        margin-right: 5%;
-        margin-left: 5%; } }
+        width: 50%;
+        margin-right: 5%; } }
     @media only screen and (min-width: 56.25em) {
       .primary .name {
         width: 55%;
-        margin-left: 10%; } }
+        max-width: 28.125em; } }
   .primary .social-media,
   .primary .name {
     display: block; }
   .primary .social-media {
-    width: 70%;
+    width: 15em;
     margin-right: auto;
     margin-left: auto;
     list-style: none;
@@ -385,10 +390,11 @@ th {
     @media only screen and (min-width: 38em) {
       .primary .social-media {
         float: left;
-        width: 30%; } }
+        width: 15em;
+        text-align: right; } }
     @media only screen and (min-width: 30em) and (max-width: 38em) {
       .primary .social-media {
-        width: 60%; } }
+        width: 15em; } }
     .primary .social-media .sm {
       display: inline-block;
       width: 14%; }
@@ -413,8 +419,11 @@ th {
     position: fixed;
     bottom: 1em;
     left: 1em; }
+    @media only screen and (min-width: 38em) {
+      .secondary .home {
+        position: absolute; } }
   .secondary .name {
-    width: 60%; }
+    width: 20em; }
   .secondary .social-media {
     max-width: 5em;
     list-style: none;
@@ -527,5 +536,12 @@ th {
         margin-right: 0; } }
   .fashion .grid img {
     width: 100%; }
+
+.textile .img-carousel {
+  height: 32em;
+  display: inline-block;
+  position: absolute; }
+  .textile .img-carousel img {
+    height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
