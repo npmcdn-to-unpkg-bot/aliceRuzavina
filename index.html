@@ -19,6 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
     <script src="app.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/controllers/ArtworksCtrl.js"></script>
     <script src="js/controllers/PhotographyCtrl.js"></script>
     <script src="js/controllers/WelcomeCtrl.js"></script>
@@ -28,12 +29,16 @@
     <script src="js/controllers/TextileCtrl.js"></script>
     <script src="js/controllers/ProjectCtrl.js"></script>
     <script src="js/services/projectService.js"></script>
-
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="bower_components/angular-slick/dist/slick.js"></script>
+				
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="sass/styles.css">
 
 </head>
 
-<body id="main" ng-view="" autoscroll="">
+<body id="main" ng-view="" autoscroll="" on-load="reloadPage()">
 
 </body>
 

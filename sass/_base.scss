@@ -59,7 +59,7 @@
 .secondary {
 	z-index: 5;
 	background: rgba(100, 100, 100, 0.5);
-	position: fixed;
+	// position: fixed;
 	top: 0;
 	width: 100%;
 	padding-top: 0.5em;
@@ -105,12 +105,15 @@
 }
 }
 
-.fashion, .textile, .artwork, .photography, .about, .project, .illustration {
+.fashion, .about, .project {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	top: 7em;
+	// top: 7em;
+}
+.textile, .artwork, .photography, .illustration {
+	// margin-top: 7em;
 }
 .artist-info {
 	overflow: auto;
@@ -214,12 +217,33 @@
 }
 
 .textile {
+	.photo-carousel {
+	// width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+	.slick-track {
+        background: rgb(200, 200, 200);
+	}
 	.img-carousel {
-		height: 32em;
-		display: inline-block;
-		position: absolute;
+	   @include break(0em) {
+			height: 15em;
+		}
+		@include break(30em, 38em) {
+			height: 20em;
+		}
+		@include break(38em, 56.25em) {
+			height: 30em;
+		}
+		@include break(56.25em) {
+			height: 40em;
+		}
+
+		text-align: center;
 		img {
 			height: 100%;
+			margin-right: auto;
+			margin-left: auto;
 		}
 	}
 }

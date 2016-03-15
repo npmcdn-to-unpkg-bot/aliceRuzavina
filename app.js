@@ -1,4 +1,4 @@
-var app = angular.module('alice', ['ngRoute']);
+var app = angular.module('alice', ['ngRoute', 'slick']);
 
 app.config(function($routeProvider) {
 	$routeProvider
@@ -18,20 +18,20 @@ app.config(function($routeProvider) {
 		templateUrl: 'templates/fashion-projects.html',
 		controller: 'FashionCtrl as ctrl'
 	})
-	.when('/textile', {
-		templateUrl: 'templates/textiles.html',
+	.when('/textile/', {
+		templateUrl: 'templates/other.html',
 		controller: 'TextileCtrl as ctrl'
 	})
     .when('/illustration', {
-		templateUrl: 'templates/illustration.html',
+		templateUrl: 'templates/other.html',
 		controller: 'IllustrationCtrl as ctrl'
 	})
 	.when('/photography', {
-		templateUrl: 'templates/photography.html',
+		templateUrl: 'templates/other.html',
 		controller: 'PhotographyCtrl as ctrl'
 	})
     .when('/artworks', {
-		templateUrl: 'templates/artworks.html',
+		templateUrl: 'templates/other.html',
 		controller: 'ArtworksCtrl as ctrl'
 	})
 	.when('/fashion-projects/:projectId', {
@@ -43,5 +43,3 @@ app.config(function($routeProvider) {
 	});
 });
 
-$(document).ready(function() {
-})
