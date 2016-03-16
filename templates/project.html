@@ -13,13 +13,35 @@
 <main class="fashion-project">
 
 	<section class="photo-carousel">
-		
+		    <div class="slide" ng-repeat="photo in photoshoot track by $index" class="img-carousel" ng-show="photo.visible">
+		        <img src="{{photo.src}}">
+		    </div>
+		    <div class="arrows">
+                <a ng-click="prev()">
+                    <img src="images/left-arrow.png" />
+                </a>
+                <a ng-click="next()">
+                    <img src="images/right-arrow.png" />
+                </a>
+            </div>
 	</section>
 
 	<section class="concept">
-		<p>{{ ctrl.project.Concept }}</p>
+		<p>{{ project.Concept }}</p>
 	</section>
 
-	<section class="sketchbook"></section>
+	<section class="sketchbook">
+			<div class="slide" ng-repeat="sketch in sketchbook track by $index" class="img-carousel" ng-show="sketch.visible">
+		        <img src="{{sketch.src}}">
+		    </div>
+		    <div class="arrows">
+                <a ng-click="prevSketch()">
+                    <img src="images/left-arrow.png" />
+                </a>
+                <a ng-click="nextSketch()">
+                    <img src="images/right-arrow.png" />
+                </a>
+            </div>
+	</section>
 
 </main>

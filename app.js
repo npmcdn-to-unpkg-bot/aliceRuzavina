@@ -1,4 +1,4 @@
-var app = angular.module('alice', ['ngRoute', 'slick']);
+var app = angular.module('alice', ['ngRoute']);
 
 app.config(function($routeProvider) {
 	$routeProvider
@@ -42,4 +42,10 @@ app.config(function($routeProvider) {
 		redirectTo: '/home'
 	});
 });
+
+reloadPage = function() {
+	console.log("works");
+    window.location.reload();
+
+}
 

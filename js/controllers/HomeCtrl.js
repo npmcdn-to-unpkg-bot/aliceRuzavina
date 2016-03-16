@@ -5,7 +5,7 @@ function HomeCtrl($routeParams, $location, $scope) {
 	this.currentPath = $location.path();
 }
 
-HomeCtrl.prototype.reloadRoute = function() {
+HomeCtrl.prototype.reloadPage = function() {
 	console.log("works");
     window.location.reload();
 

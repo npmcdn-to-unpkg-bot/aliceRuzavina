@@ -10,9 +10,18 @@
 </header>
 <main class="textile">
     <h2>{{ ctrl.works.Title}}</h2>
-	<section class="photo-carousel">
-		<slick infinite="true" dots="true" speed="600" slides-to-show="1" touch-move="true">
-		    <div ng-repeat="img in ctrl.works.Images track by $index" class="img-carousel"><img src="{{img}}"></div>
-		</slick>
+	<section class="photo-carousel slider">
+		
+		    <div class="slide" ng-repeat="image in images" class="img-carousel" ng-show="image.visible">
+		        <img src="{{image.src}}">
+		    </div>
+		    <div class="arrows">
+                <a ng-click="prev()">
+                    <img src="images/left-arrow.png" />
+                </a>
+                <a ng-click="next()">
+                    <img src="images/right-arrow.png" />
+                </a>
+            </div>
 	</section>
 </main>
