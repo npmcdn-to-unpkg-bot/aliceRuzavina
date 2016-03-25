@@ -1,44 +1,43 @@
-<header class="secondary">
-    <a href="#/fashion-projects">
-    <a class="home" href="#/home"><img src="images/home.svg"></a>
-	<div class="name"><img src="images/name.svg"></div>
+<header class="third">
+  <a class="back-arrow" href="#/fashion-projects"><img src="images/back-arrow.png"></a>
+  <a class="back-to-home" href="#/home"><img src="images/home.png"></a>
+	<div class="name"><img src="images/name.png"></div>
 	<ul class="social-media">
-		<li class="sm"><a href="https://www.instagram.com/aliceruz/" target="_blank"><img src="images/insta.svg" alt="Instagram"></a></li>
-		<li class="sm"><a href="mailto:alice.ruz@gmail.com" target="_blank"><img src="images/pin.svg" alt="Mail"></a></li>
-        <li class="sm"><a href="https://www.facebook.com/alice.ruz?fref=ts" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a></li>
-        <li class="sm"><a href="https://www.pinterest.com/aliceruz/" target="_blank"><img src="images/pin.svg" alt="Pinterest"></a></li>
-	</ul>
+        <li class="sm"><a href="mailto:alice.ruz@gmail.com" target="_blank"><img src="images/email.png" alt="Mail"></a></li>
+    <li class="sm"><a href="https://www.instagram.com/aliceruz/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
+        <li class="sm"><a href="https://www.facebook.com/alice.ruz?fref=ts" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+        <li class="sm"><a href="https://www.pinterest.com/aliceruz/" target="_blank"><img src="images/pinterest.png" alt="Pinterest"></a></li>
+        <li class="sm"><a href="https://www.linkedin.com/aliceruz/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+  </ul>
 </header>
 
-<main class="fashion-project">
+<a class="back-to-home-fixed" href="#/home"><img src="images/home.png"></a>
 
-	<section class="photo-carousel">
-		    <div class="slide" ng-repeat="photo in photoshoot track by $index" class="img-carousel" ng-show="photo.visible">
-		        <img src="{{photo.src}}">
-		    </div>
-		    <div class="arrows">
-                <a ng-click="prev()">
-                    <img src="images/left-arrow.png" />
-                </a>
-                <a ng-click="next()">
-                    <img src="images/right-arrow.png" />
-                </a>
-            </div>
+<main class="project">
+
+	<section class="photo-carousel slider">
+		<img class="image-carousel" ng-repeat="photo in photoshoot track by $index" class="img-carousel" ng-show="photo.visible" src="{{photo.src}}">
+		<div class="arrows">
+            <a class="previous" ng-click="prev()">
+                <img src="images/left-arrow.png" />
+            </a>
+            <a class="next" ng-click="next()">
+                <img src="images/right-arrow.png" />
+            </a>
+        </div>
 	</section>
 
 	<section class="concept">
 		<p>{{ project.Concept }}</p>
 	</section>
 
-	<section class="sketchbook">
-			<div class="slide" ng-repeat="sketch in sketchbook track by $index" class="img-carousel" ng-show="sketch.visible">
-		        <img src="{{sketch.src}}">
-		    </div>
-		    <div class="arrows">
-                <a ng-click="prevSketch()">
+	<section class="photo-carousel sketchbook">
+		<img class="image-carousel" src="{{sketch.src}}" ng-repeat="sketch in sketchbook track by $index" class="img-carousel" ng-show="sketch.visible">
+		<div class="arrows-sketches">
+                <a class="previous" ng-click="prevSketch()">
                     <img src="images/left-arrow.png" />
                 </a>
-                <a ng-click="nextSketch()">
+                <a class="next" ng-click="nextSketch()">
                     <img src="images/right-arrow.png" />
                 </a>
             </div>

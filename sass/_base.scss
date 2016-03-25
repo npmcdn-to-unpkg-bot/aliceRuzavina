@@ -1,57 +1,119 @@
+body {
+	font-size: 18px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+.back-to-home-fixed {
+    width: 4em;
+  	position: fixed;
+   	bottom: 0.5em;
+   	left: 1em;
+   	z-index: 10;
+   	margin-bottom: 0em;
+    img {
+   		width: 100%;
+   	}
+    @include break(60.625em) {
+	    display: none;
+    }
+}
 .primary {
+	z-index: 10;
+	position: relative;
 	overflow: auto;
-	width: 90%;
+	width: 98%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 0.5em;
 	text-align: center;
-	@include break(30em, 38em) {
-		width: 80%;
-	}
 	@include break(38em) {
-		width: 70%;
+		width: 90%;
 	}
-	.name{
-		// width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		// @include break(30em, 38em) {
-		// 	width: 70%;
-		// }
-		@include break(38em) {
-			float: left;
-			width: 50%;
-            margin-right: 5%;
-		}
-		@include break(56.25em) {
-			width: 55%;
-			max-width: 28.125em;
-		}
+	@include break(67em) {
+		height: 12em;
 	}
-	.social-media,
-    .name {
-	    display: block;
-    }
+	@include break(60.625em, 67em) {
+		height: 10em;
+	}
+	.name-telephone {
+        display: none;
+		@include break(60.625em) {
+			display: block;
+			position: absolute;
+    		float: left;
+    		width: 75%;
+    		margin-right: 5%;
+    	}
+    	img {
+    		width: 100%;
+    		height: auto;
+    	}
+	}
+	.name, .social-media {
+		float: none;
+		width: 100%;
+	    img {
+	    	width: 100%;
+	    }
+	}
     .social-media {
-    	@include break(38em) {
-			float: left;
-			width:15em;
-			text-align: right;
-		}
-    	width: 15em;
-    	@include break(30em, 38em) {
-			width: 15em;
-		}
-    	margin-right: auto;
-    	margin-left: auto;
-    	list-style: none;
-    	text-align: center;
-    	padding: 0;
+    	width: 100%;
+        margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0.5em;
     	.sm {
     		display: inline-block;
-    		@include sm-grid(4, 8%);
-    		img {
-    			// width: 100%;
-    		}
+    		width: 1.75em;
+    		margin-right: 0.5em;
+    		margin-left: 0;
+    	}
+    	.sm:last-child {
+    		margin-right: 0;
+    	}
+        @include break(38em, 60.625em) {
+        	text-align: right;
+	    	float: left;
+	    	width: 35%;
+	    	margin-left: 0%;
+	        .sm {
+				width: 1.7em;
+				margin-right: 0.1em;
+			}
+	    }
+	    @include break(60.625em, 73em) {
+            text-align: right;
+	    	float: left;
+	    	width: 35%;
+	    	margin-left: 65%;
+	        .sm {
+				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
+	    @include break(73em) {
+            text-align: right;
+	    	float: left;
+	    	width: 30%;
+	    	margin-left: 65%;
+	        .sm {
+				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
+    }
+    .name {
+    	@include break(38em, 60.625em) {
+    		float: left;
+    		width: 65%;
+    		margin-right: 0;
+    	}
+    	@include break(60.625em) {
+    		display: none;
     	}
     }
 }
@@ -59,62 +121,353 @@
 .secondary {
 	z-index: 5;
 	background: rgba(100, 100, 100, 0.5);
-	// position: fixed;
+	position: fixed;
 	top: 0;
-	width: 100%;
 	padding-top: 0.5em;
+	z-index: 20;
 	// padding-bottom: 0.5em;
-	.home img {
-	    width: 5em;
+	.back-to-home {
+    	display: none;
+    	@include break(60.625em) {
+    		width: 6%;
+    	    display: block;
+	    	position: relative;
+            margin-top: 0em;
+            margin-left: 4%;
+            height: auto;
+	    	height: auto;
+	    	float: left;
+	    	margin-bottom: 0.25em;
+	    	img {
+    		    width: 100%;
+    	    }
+	    }
+	}
+    overflow: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	.name, .social-media {
+		float: none;
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+	    img {
+	    	width: 100%;
+	    }
+	}
+    .social-media {
+    	width: 100%;
+        margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0.5em;
+    	.sm {
+    		display: inline-block;
+    		width: 1.75em;
+    		margin-right: 0.5em;
+    		margin-left: 0;
+    	}
+    	.sm:last-child {
+    		margin-right: 0;
+    	}
+    	@include break(38em, 60.625em) {
+        	text-align: right;
+	    	float: left;
+	    	width: 30%;
+	    	margin-right: 5%;
+	        .sm {
+				width: 1.7em;
+				margin-right: 0.1em;
+			}
+	    }
+	    @include break(60.625em, 73em) {
+            text-align: right;
+	    	float: left;
+	    	width: 30%;
+	    	margin-right: 5%;
+	        .sm {
+				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
+	    @include break(73em) {
+            text-align: right;
+	    	float: left;
+	    	width: 30%;
+	        .sm {
+				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
     }
-    .social-media,
     .name {
-	    display: inline-block;
-    }
-    .home {
-    	position: fixed;
-    	bottom: 1em;
-    	left: 1em;
-    	@include break(38em) {
-    		position: absolute;
+    	@include break(38em, 60.625em) {
+    		float: left;
+    		width: 60%;
+    		margin-left: 5%;
+    	}
+    	@include break(60.625em) {
+    		float: left;
+    		width: 50%;
+    		margin-left: 5%;
     	}
     }
-    .name {
-        width: 20em;
-    }
-    .social-media {
-	max-width: 5em;
-	list-style: none;
-	overflow: auto;
-	margin: 0;
-	padding: 0;
-	.sm {
-		float: left;
-		img {
-			width: 100%;
-		}
-	}
-	.sm:nth-child(1),
-	.sm:nth-child(3) {
-		padding-right: 1em;
-	}
-	.sm:nth-child(1),
-	.sm:nth-child(2) {
-		padding-bottom: 0.7em;
-	}
-}
 }
 
-.fashion, .about, .project {
-	width: 90%;
+.third {
+	z-index: 5;
+	background: $header-color;
+	position: fixed;
+	top: 0;
+	padding-top: 0.5em;
+	z-index: 20;
+	.back-arrow {
+		width: 7%;
+		@include break(0, 60.625em) {
+			width: 7%;
+    		position: fixed;
+    	    bottom: 1em;
+    	    left: 1em;
+    	    z-index: 10;
+        }
+        img {
+        	width: 100%;
+        }
+        @include break(60.625em) {
+	    	position: relative;
+            margin-top: 1.5em;
+            margin-left: 2%;
+            height: auto;
+	    	height: auto;
+	    	float: left;
+	    }
+	}
+	.back-to-home {
+    	display: none;
+    	@include break(60.625em) {
+    		width: 6%;
+    	    display: block;
+	    	position: relative;
+            margin-top: 0em;
+            margin-left: 4%;
+            height: auto;
+	    	height: auto;
+	    	float: left;
+	    	margin-bottom: 0.25em;
+	    	img {
+    		    width: 100%;
+    	    }
+	    }
+	}
+    overflow: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	.name, .social-media {
+		float: none;
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+	    img {
+	    	width: 100%;
+	    }
+	}
+    .social-media {
+    	width: 100%;
+        margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0.5em;
+    	.sm {
+    		display: inline-block;
+    		width: 1.75em;
+    		margin-right: 0.5em;
+    		margin-left: 0;
+    	}
+    	.sm:last-child {
+    		margin-right: 0;
+    	}
+    	@include break(38em, 60.625em) {
+        	text-align: right;
+	    	float: left;
+	    	width: 30%;
+	    	margin-right: 5%;
+	        .sm {
+				width: 1.7em;
+				margin-right: 0.1em;
+			}
+	    }
+	    @include break(60.625em, 73em) {
+            text-align: right;
+	    	float: left;
+	    	width: 30%;
+	        .sm {
+				width: 2em;
+				margin-right: 0.5em;
+			}
+	    }
+	    @include break(73em) {
+            text-align: right;
+	    	float: left;
+	    	width: 30%;
+	        .sm {
+				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
+    }
+    .name {
+    	@include break(38em, 60.625em) {
+    		float: left;
+    		width: 60%;
+    		margin-left: 5%;
+    	}
+    	@include break(60.625em) {
+    		float: left;
+    		width: 45%;
+            margin-left: 6%;
+    	}
+    }
+}
+
+.home {
+	nav {
+		overflow: hidden;
+	}
+    width: 90%;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	.important, .less-important {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.important {
+		margin-bottom: 3em;
+		a.about-icon img {
+			width: 60%;
+			margin-bottom: 2em;
+		}
+		a.fashion-icon img {
+			width: 80%;
+		}
+	}
+	.less-important {
+		a.textile-icon img {
+			width: $half;
+			margin-bottom: 1em;
+		}
+		a.illustration-icon img {
+			width: $half + 20%;
+			margin-bottom: 1em;
+		}
+		a.artwork-icon img {
+			width: $half + 10%;
+			margin-bottom: 1em;
+		}
+		a.photography-icon img {
+			width: $half + 10%;
+			margin-bottom: 1em;
+		}
+	}
+	@include break(30em, 60.625em) {
+		width: 90%;
+		a.about-icon, a.fashion-icon {
+			width: $half;
+			float: left;
+	    }
+	    .important, .less-important {
+		    width: 100%;
+		    float: none;
+		    text-align: center;
+		    overflow: hidden;
+	    }
+	    .important {
+	    	margin-bottom: 3em;
+		a.about-icon img {
+			width: $half - 5%;
+			margin-bottom: 0;
+		}
+		a.fashion-icon img {
+			width: $half + 15%;
+		}
+	}
+	.less-important {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		a.textile-icon, a.illustration-icon, a.artwork-icon, a.photography-icon {
+			width: $half;
+			float: left;
+			@include icon-grid(2, 0.5%);
+		}
+	}
+	}
+	@include break(60.625em) {
+		width: 90%;
+		a.about-icon, a.fashion-icon {
+			width: $half;
+			float: left;
+	    }
+	    .important, .less-important {
+		    float: left;
+		    text-align: center;
+		    overflow: hidden;
+	    }
+	    .important {
+	    	width: 45%;
+	    	margin-bottom: 3em;
+		a.about-icon img {
+			width: $half+20%;
+			margin-bottom: 0;
+		}
+		a.fashion-icon img {
+			padding-top: 2em;
+			width: $half + 40%;
+		}
+	    }
+	.less-important {
+		width: 45%;
+		margin-right: 5%;
+		margin-left: 5%;
+		a.textile-icon, a.illustration-icon, a.artwork-icon, a.photography-icon {
+			float: left;
+			@include icon-grid(2, 0.5%);
+		}
+			a.artwork-icon img, a.photography-icon img {
+				width: 60%;
+			}
+			a.textile-icon img {
+				width: 50%;
+			}
+			a.illustration-icon img {
+				width: 80%;
+				padding-top: 1em;
+			}
+	    }
+	}
+}
+
+footer.site-info {
+    text-align: center;
+    p {
+    	font-size: 0.65em;
+    }
+}
+
+.fashion, .about, .project, .other {
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	// top: 7em;
+	margin-top: 8.5em;
+	@include break(60.625em) {
+		margin-top: 9.5em;
+	}
 }
-.textile, .artwork, .photography, .illustration {
-	// margin-top: 7em;
-}
+
 .artist-info {
 	overflow: auto;
 }
@@ -216,34 +569,82 @@
 
 }
 
-.textile {
-	.photo-carousel {
-	// width: 80%;
+
+.photo-carousel {
+	background: $slider-photo-color;
 	margin-right: auto;
 	margin-left: auto;
+	text-align: center;
+	position: relative;
+	img {
+		height: 80vh;
+		width: auto;
+		@include break(48em, 54em) {
+			height: 70vh;
+			width: auto;
+		}
+		@include break(36em, 48em) {
+			height: 40vh;
+			width: auto;
+		}
+		@include break(0em, 36em) {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.arrows {
+		.previous, .next {
+			width: 2.5em;
+			position: absolute;
+			top: 40%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.previous {
+			left: 1em;
+		}
+	    .next {
+			right: 1em;
+		}	
+	}
 }
-	.slick-track {
-        background: rgb(200, 200, 200);
-	}
-	.img-carousel {
-	   @include break(0em) {
-			height: 15em;
-		}
-		@include break(30em, 38em) {
-			height: 20em;
-		}
-		@include break(38em, 56.25em) {
-			height: 30em;
-		}
-		@include break(56.25em) {
-			height: 40em;
-		}
 
-		text-align: center;
-		img {
-			height: 100%;
-			margin-right: auto;
-			margin-left: auto;
+.sketchbook {
+	position: relative;
+	.arrows-sketches {
+		.previous, .next {
+			width: 2.5em;
+			position: absolute;
+			top: 40%;
+			img {
+				width: 100%;
+				height: auto;
+			}
 		}
+		.previous {
+			left: 1em;
+		}
+	    .next {
+			right: 1em;
+		}	
 	}
+}
+
+.slide.ng-hide-add,
+.slide.ng-hide-remove {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  display: block!important;
+}
+.slide.ng-hide-add.ng-hide-add-active,
+.slide.ng-hide-remove {
+  opacity: 0;
+}
+.slide.ng-hide-add,
+.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
 }
