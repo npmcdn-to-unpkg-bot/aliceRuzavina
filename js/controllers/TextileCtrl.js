@@ -20,12 +20,21 @@ app.controller('TextileCtrl', ['$scope', '$routeParams', '$location', function(s
 }])
 
 var WORKS_DATA = [{
-    src: 'images/album_cover_riso.jpg',
-    title: 'Pic 1'
+    src: 'images/textiles/sample1.jpg',
+    title: 'Sample 1'
   }, {
-    src: 'images/pendant_hand.jpg',
-    title: 'Pic 2'
+    src: 'images/textiles/sample2.jpg',
+    title: 'Sample 2'
   }, {
-    src: 'images/expbody2.jpg',
-    title: 'Pic 3'
+    src: 'images/textiles/sample3.jpg',
+    title: 'Sample 3'
+  }, {
+    src: 'images/textiles/sample4.jpg',
+    title: 'Sample 4'
+  }, {
+    src: 'images/textiles/sample5.jpg',
+    title: 'Sample 5'
+  }, {
+    src: 'images/textiles/sample6.jpg',
+    title: 'Sample 6'
   }]

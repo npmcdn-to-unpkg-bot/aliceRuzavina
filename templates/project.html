@@ -1,8 +1,8 @@
 <header class="third">
   <a class="back-arrow" href="#/fashion-projects"><img src="images/back-arrow.png"></a>
   <a class="back-to-home" href="#/home"><img src="images/home.png"></a>
-	<div class="name"><img src="images/name.png"></div>
-	<ul class="social-media">
+    <div class="name"><img src="images/name.png"></div>
+    <ul class="social-media">
         <li class="sm"><a href="mailto:alice.ruz@gmail.com" target="_blank"><img src="images/email.png" alt="Mail"></a></li>
     <li class="sm"><a href="https://www.instagram.com/aliceruz/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
         <li class="sm"><a href="https://www.facebook.com/alice.ruz?fref=ts" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
@@ -14,33 +14,37 @@
 <a class="back-to-home-fixed" href="#/home"><img src="images/home.png"></a>
 
 <main class="project">
-
-	<section class="photo-carousel slider">
-		<img class="image-carousel" ng-repeat="photo in photoshoot track by $index" class="img-carousel" ng-show="photo.visible" src="{{photo.src}}">
-		<div class="arrows">
-            <a class="previous" ng-click="prev()">
+    <nav class="page-navigation">
+        <a ng-click="ctrl.gotoPhotoshoot()">Photoshoot - </a>
+        <a ng-click="ctrl.gotoConcept()">About - </a>
+        <a ng-click="ctrl.gotoSketchbook()">Sketchbook</a>
+    </nav>
+    <section class="photo-carousel slider" id="photoshoot" ng-style="{{ctrl.stylesPhotoshoot}}">
+        <img ng-repeat="photo in ctrl.photoshoot"  class="image-carousel" class="img-carousel" src="{{photo.src}}" ng-show="photo.visible">
+        <div class="arrows">
+            <a class="previous" ng-click="ctrl.previous()">
                 <img src="images/left-arrow.png" />
             </a>
-            <a class="next" ng-click="next()">
+            <a class="next" ng-click="ctrl.next()">
                 <img src="images/right-arrow.png" />
             </a>
         </div>
-	</section>
+    </section>
 
-	<section class="concept">
-		<p>{{ project.Concept }}</p>
-	</section>
+    <section class="concept" id="concept">
+        <p>{{ ctrl.project.Concept }}</p>
+    </section>
 
-	<section class="photo-carousel sketchbook">
-		<img class="image-carousel" src="{{sketch.src}}" ng-repeat="sketch in sketchbook track by $index" class="img-carousel" ng-show="sketch.visible">
-		<div class="arrows-sketches">
-                <a class="previous" ng-click="prevSketch()">
+    <section class="photo-carousel sketchbook" id="sketchbook" ng-style="{{ctrl.stylesSketchbook}}">
+        <img class="image-carousel" ng-repeat="sketch in ctrl.sketchbook" class="img-carousel" src="{{sketch.src}}" ng-show="sketch.visible">
+       <div class="arrows-sketches">
+                <a class="previous" ng-click="ctrl.previousSketch()">
                     <img src="images/left-arrow.png" />
                 </a>
-                <a class="next" ng-click="nextSketch()">
+                <a class="next" ng-click="ctrl.nextSketch()">
                     <img src="images/right-arrow.png" />
                 </a>
             </div>
-	</section>
+    </section>
 
 </main>

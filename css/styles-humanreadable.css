@@ -406,6 +406,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .back-to-home-fixed {
   width: 4em;
   position: fixed;
@@ -738,7 +742,7 @@ a {
   .third .social-media {
     text-align: right;
     float: left;
-    width: 30%;
+    width: 28%;
   }
   .third .social-media .sm {
     width: 2em;
@@ -749,7 +753,7 @@ a {
   .third .social-media {
     text-align: right;
     float: left;
-    width: 30%;
+    width: 28%;
   }
   .third .social-media .sm {
     width: 2.5em;
@@ -1010,6 +1014,10 @@ footer.site-info p {
   }
 }
 
+.fashion {
+  width: 90%;
+  text-align: center;
+}
 @media only screen and (min-width: 30em) and (max-width: 38em) {
   .fashion {
     width: 60%;
@@ -1057,10 +1065,68 @@ footer.site-info p {
 }
 .fashion .grid img {
   width: 100%;
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 38em) {
+  .fashion .grid img {
+    margin-bottom: 0;
+  }
+}
+
+.project .page-navigation {
+  margin-left: 2.5%;
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 30em) and (max-width: 38em) {
+  .project .page-navigation {
+    margin-left: 5%;
+  }
+}
+@media only screen and (min-width: 38em) {
+  .project .page-navigation {
+    margin-left: 10%;
+  }
+}
+.project .concept {
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 30em) and (max-width: 38em) {
+  .project .concept {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 38em) and (max-width: 60.625em) {
+  .project .concept {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 60.625em) and (max-width: 70em) {
+  .project .concept {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 70em) and (max-width: 90em) {
+  .project .concept {
+    width: 55%;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .project .concept {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 37em) {
+  .project .concept {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
 }
 
 .photo-carousel {
-  background: rgba(100, 100, 100, 0.5);
   margin-right: auto;
   margin-left: auto;
   text-align: center;
