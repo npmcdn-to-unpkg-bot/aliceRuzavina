@@ -66,6 +66,7 @@ function ProjectCtrl($routeParams, $location, ProjectService, $anchorScroll) {
     this.sketch.visible = true;
     this.stylesPhotoshoot= {"background": "rgba(200,200,200, 0.5"};
     this.stylesSketchbook= {"background": "rgba(200,200,200, 0.5"};
+        console.log(this.project.Border);
 }
 
 ProjectCtrl.prototype.watch = function(image) {
@@ -73,7 +74,6 @@ ProjectCtrl.prototype.watch = function(image) {
         photo.visible = false; // make every image invisible
     });
     this.photoshoot[this.currentIndex].visible = true;
-    console.log(photo);
 }
 
 

@@ -9,18 +9,20 @@
         <li class="sm"><a href="https://www.linkedin.com/aliceruz/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
   </ul>
 </header>
-<a class="back-to-home-fixed" href="#/home"><img src="images/home.png"></a>
+<a class="back-to-home-fixed two" href="#/home"><img src="images/home.png"></a>
 
 <main class="fashion">
 	<section class="fashion-projects">
 		<ul class="grid">
          <li class="icon" ng-repeat="project in ctrl.projects" ng-click="ctrl.goToProject(project)">
             <a class="pointer">
-                <div class="project-image"><img src="{{project.ProjectImage}}"></div>
-<!--            <div class="overlay">
-                   <p>{{ work.ShortDescription }}</p>
-                   <h2>{{ work.Title }}</h2>
-                </div> -->
+                <div class="project-icon">
+                  <img class="project-image" src="{{project.ProjectImage}}">
+                  <div class="overlay">
+                    <h2>{{ project.Title }}</h2>
+                    <div class="eye"><img src="images/eye-animation.gif"></div>
+                  </div>
+                </div>
             </a>
          </li>
       </ul>

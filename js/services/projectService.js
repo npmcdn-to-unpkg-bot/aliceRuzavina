@@ -16,6 +16,8 @@ ProjectService.prototype.getProject = function(id) {
 var PROJECTS_DATA = [{
 	"ID": "tailoring",
 	"Title": "Tailoring",
+  "TitleImage": "images/tailoring/tailoring-title.png",
+  "Border": "images/tailoring/tailoring-border.png",
 	"ProjectImage": "images/tailoring/main-tailoring.jpg",
 	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
 	"Photoshoot": [{
@@ -48,6 +50,8 @@ var PROJECTS_DATA = [{
 }, {
 	"ID": "bottega-veneta",
 	"Title": "Bottega Veneta",
+  "TitleImage": "images/bottega-veneta/bottega-veneta-title.png",
+  "Border": "images/bottega-veneta/bottega-veneta-border.png",
 	"ProjectImage": "images/bottega-veneta/main-bv.jpg",
 	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
 	"Photoshoot": [{
@@ -82,6 +86,8 @@ var PROJECTS_DATA = [{
 }, {
 	"ID": "toile de joeux creatures",
 	"Title": "Toile de Joeux Creatures",
+  "TitleImage": "images/creatures/creatures-title2.png",
+  "Border": "images/creatures/creatures-border.png",
 	"ProjectImage": "images/creatures/main-creatures.jpg",
 	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
 	"Photoshoot": [{
@@ -104,6 +110,7 @@ var PROJECTS_DATA = [{
 }, {
 	"ID": "accessory",
 	"Title": "Accessory Project",
+  "TitleImage": "images/accessory/accessory-title.png",
 	"ProjectImage": "images/accessory/main-accessory.jpg",
 	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
 	"Photoshoot": [{
@@ -132,6 +139,7 @@ var PROJECTS_DATA = [{
 }, {
 	"ID": "shirt",
 	"Title": "Shirt Project",
+  "TitleImage": "images/shirt/shirt-title.png",
 	"ProjectImage": "images/shirt/main-shirt.jpg",
 	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
 	"Photoshoot": [{
@@ -151,6 +159,7 @@ var PROJECTS_DATA = [{
 }, {
 	"ID": "white",
 	"Title": "White Project",
+  "TitleImage": "images/white-project/white-title.png",
 	"ProjectImage": "images/white-project/main-white.jpg",
 	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
 	"Photoshoot": [{
@@ -182,6 +191,7 @@ var PROJECTS_DATA = [{
 }, {
 	"ID": "floge",
 	"Title": "Flöge Project",
+  "TitleImage": "images/floge/floge-title.png",
 	"ProjectImage": "images/floge/main-floge.jpg",
 	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
 	"Photoshoot": [{
