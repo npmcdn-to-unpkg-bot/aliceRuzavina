@@ -19,7 +19,7 @@ var PROJECTS_DATA = [{
   "TitleImage": "images/tailoring/tailoring-title.png",
   "Border": "images/tailoring/tailoring-border.png",
 	"ProjectImage": "images/tailoring/main-tailoring.jpg",
-	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
+	"Concept": "descriptions/tailoring.html",
 	"Photoshoot": [{
     "src": 'images/tailoring/research1.jpg',
     "title": 'Research 1',
@@ -53,7 +53,7 @@ var PROJECTS_DATA = [{
   "TitleImage": "images/bottega-veneta/bottega-veneta-title.png",
   "Border": "images/bottega-veneta/bottega-veneta-border.png",
 	"ProjectImage": "images/bottega-veneta/main-bv.jpg",
-	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
+	"Concept": "descriptions/bottega-veneta.html",
 	"Photoshoot": [{
     "src": 'images/bottega-veneta/research1.jpg',
     "title": 'Research 1'
@@ -89,7 +89,7 @@ var PROJECTS_DATA = [{
   "TitleImage": "images/creatures/creatures-title2.png",
   "Border": "images/creatures/creatures-border.png",
 	"ProjectImage": "images/creatures/main-creatures.jpg",
-	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
+	"Concept": "descriptions/creatures.html",
 	"Photoshoot": [{
     "src": 'images/creatures/research1.jpg',
     "title": 'Research 1'
@@ -112,7 +112,7 @@ var PROJECTS_DATA = [{
 	"Title": "Accessory Project",
   "TitleImage": "images/accessory/accessory-title.png",
 	"ProjectImage": "images/accessory/main-accessory.jpg",
-	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
+	"Concept": "descriptions/accessory.html",
 	"Photoshoot": [{
     "src": 'images/accessory/photoshoot1.jpg',
     "title": 'Photoshoot 1'
@@ -141,7 +141,7 @@ var PROJECTS_DATA = [{
 	"Title": "Shirt Project",
   "TitleImage": "images/shirt/shirt-title.png",
 	"ProjectImage": "images/shirt/main-shirt.jpg",
-	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
+	"Concept": "descriptions/shirt.html",
 	"Photoshoot": [{
     "src": 'images/shirt/photoshoot1.jpg',
     "title": 'Photoshoot 1'
@@ -161,7 +161,7 @@ var PROJECTS_DATA = [{
 	"Title": "White Project",
   "TitleImage": "images/white-project/white-title.png",
 	"ProjectImage": "images/white-project/main-white.jpg",
-	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
+	"Concept": "descriptions/white.html",
 	"Photoshoot": [{
     "src": 'images/white-project/photoshoot1.jpg',
     "title": 'Photoshoot 1'
@@ -193,7 +193,7 @@ var PROJECTS_DATA = [{
 	"Title": "Flöge Project",
   "TitleImage": "images/floge/floge-title.png",
 	"ProjectImage": "images/floge/main-floge.jpg",
-	"Concept": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ipsum, condimentum in lacus finibus, malesuada posuere tellus. Phasellus venenatis tortor nisi, at molestie urna bibendum at. Nullam lorem elit, viverra id molestie id, tincidunt non diam. Maecenas non ex eget libero imperdiet faucibus. Aenean convallis feugiat justo, quis fringilla quam fringilla id. Vivamus pharetra, ante a euismod laoreet, diam urna pulvinar leo, vel aliquet nibh sapien quis enim. Etiam sagittis feugiat metus at mattis.",
+	"Concept": "descriptions/floge.html",
 	"Photoshoot": [{
     "src": 'images/floge/photoshoot1.jpg',
     "title": 'Pic 1'

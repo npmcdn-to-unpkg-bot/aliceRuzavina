@@ -16,10 +16,11 @@ app.controller('IllustrationCtrl', ['$scope', '$routeParams', '$location', funct
 
         scope.images[scope.currentIndex].visible = true; // make the current image visible
     });
+    console.log('ill');
 }])
 
 var WORKS_DATA = [{
-    src: 'images/album_cover_riso.jpg',
+    src: 'images/illustration/ill-1.jpg',
     title: 'Pic 1'
   }, {
     src: 'images/pendant_hand.jpg',

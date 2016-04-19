@@ -18,7 +18,7 @@ app.config(function($routeProvider) {
 		templateUrl: 'templates/fashion-projects.html',
 		controller: 'FashionCtrl as ctrl'
 	})
-	.when('/textile/', {
+	.when('/textile', {
 		templateUrl: 'templates/other.html',
 		controller: 'TextileCtrl as ctrl'
 	})

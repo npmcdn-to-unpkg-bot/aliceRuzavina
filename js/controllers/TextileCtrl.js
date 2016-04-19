@@ -16,6 +16,7 @@ app.controller('TextileCtrl', ['$scope', '$routeParams', '$location', function(s
     });
 
     scope.images[scope.currentIndex].visible = true; // make the current image visible
+    console.log('text');
 });
 }])
 
