@@ -94,11 +94,15 @@ ul {
 	@include break(38em) {
 		width: 100%;
 	}
-	@include break(67em) {
+	@include break(67em, 90.625em) {
 		height: 12em;
 	}
 	@include break(60.625em, 67em) {
 		height: 10em;
+	}
+	@include break(90.625em) {
+		width: 70%;
+		height: 15em;
 	}
 	.name-telephone {
         display: none;
@@ -174,7 +178,7 @@ ul {
 				margin-right: 0.5em;
 			}
 	    }
-	    @include break(73em) {
+	    @include break(73em, 118.750em) {
 	    	z-index: 20;
             text-align: right;
 	    	float: left;
@@ -182,6 +186,17 @@ ul {
 	    	margin-left: 65%;
 	        .sm {
 				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
+	    @include break(118.750em) {
+	    	z-index: 20;
+            text-align: right;
+	    	float: left;
+	    	width: 30%;
+	    	margin-left: 65%;
+	        .sm {
+				width: 3em;
 				margin-right: 0.5em;
 			}
 	    }
@@ -209,7 +224,7 @@ ul {
 	// padding-bottom: 0.5em;
 	.back-to-home {
     	display: none;
-    	@include break(60.625em) {
+    	@include break(60.625em, 90.625em) {
     		width: 6%;
     	    display: block;
 	    	position: relative;
@@ -223,6 +238,20 @@ ul {
     		    width: 100%;
     	    }
 	    }
+	    @include break(90.625em) {
+	    	width: 4.5%;
+    	    display: block;
+	    	position: relative;
+            margin-top: 0em;
+            margin-left: 20%;
+            height: auto;
+	    	height: auto;
+	    	float: left;
+	    	margin-bottom: 0.25em;
+	    	img {
+    		    width: 100%;
+    	    }
+    	}
 	}
     overflow: auto;
 	width: 100%;
@@ -272,10 +301,20 @@ ul {
 				margin-right: 0.5em;
 			}
 	    }
-	    @include break(73em) {
+	    @include break(73em, 90.625em) {
             text-align: right;
 	    	float: left;
 	    	width: 30%;
+	        .sm {
+				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
+	    @include break(90.625em) {
+	    	text-align: right;
+	    	float: left;
+	    	width: 15%;
+	    	margin-left: 2.5%;
 	        .sm {
 				width: 2.5em;
 				margin-right: 0.5em;
@@ -288,10 +327,15 @@ ul {
     		width: 60%;
     		margin-left: 5%;
     	}
-    	@include break(60.625em) {
+    	@include break(60.625em, 90.625em) {
     		float: left;
     		width: 50%;
     		margin-left: 5%;
+    	}
+    	@include break(90.625em) {
+    		float: left;
+    		margin-left: 2.5%;
+    		width: 35%;
     	}
     }
 }
@@ -313,7 +357,7 @@ ul {
         img {
         	width: 100%;
         }
-        @include break(60.625em) {
+        @include break(60.625em, 90.625em) {
         	display: block;
 	    	position: relative;
             margin-top: 2em;
@@ -322,11 +366,35 @@ ul {
 	    	height: auto;
 	    	float: left;
 	    }
+	    @include break(90.625em) {
+	    	display: block;
+	    	position: relative;
+            margin-top: 2em;
+            margin-left: 15%;
+            width: 4.5%;
+            height: auto;
+	    	height: auto;
+	    	float: left;
+	    }
 	}
 	.back-to-home {
     	display: none;
-    	@include break(60.625em) {
+    	@include break(60.625em, 90.625em) {
     		width: 6%;
+    	    display: block;
+	    	position: relative;
+            margin-top: 0em;
+            margin-left: 4%;
+            height: auto;
+	    	height: auto;
+	    	float: left;
+	    	margin-bottom: 0.25em;
+	    	img {
+    		    width: 100%;
+    	    }
+	    }
+	    @include break(90.625em) {
+	    	width: 4.5%;
     	    display: block;
 	    	position: relative;
             margin-top: 0em;
@@ -387,10 +455,20 @@ ul {
 				margin-right: 0.5em;
 			}
 	    }
-	    @include break(73em) {
+	    @include break(73em, 90.625em) {
             text-align: right;
 	    	float: left;
 	    	width: 28%;
+	        .sm {
+				width: 2.5em;
+				margin-right: 0.5em;
+			}
+	    }
+	    @include break(90.625em) {
+            text-align: right;
+	    	float: left;
+	    	width: 15%;
+	    	margin-left: 2.5%;
 	        .sm {
 				width: 2.5em;
 				margin-right: 0.5em;
@@ -403,10 +481,15 @@ ul {
     		width: 60%;
     		margin-left: 5%;
     	}
-    	@include break(60.625em) {
+    	@include break(60.625em, 90.625em) {
     		float: left;
     		width: 45%;
             margin-left: 6%;
+    	}
+    	@include break(90.625em) {
+    		float: left;
+    		width: 35%;
+            margin-left: 2.5%;
     	}
     }
 }
@@ -494,7 +577,6 @@ ul {
 	}
 	}
 	@include break(60.625em) {
-		width: 90%;
 		min-height: 25em;
 		a.about-icon, a.fashion-icon {
 			width: $half;
@@ -558,13 +640,28 @@ ul {
 		    }
 	    }
 	}
+	@include break(60.625em, 90.625em) {
+		width: 90%;
+	}
+	@include break(90.625em) {
+		width: 70%;
+	}
+}
+
+.fashion-projects {
+	width: 100%;
+	@include break(90.625em) {
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 footer.site-info {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 0.5em;
-    @include break(60.625em) {
+    @include break(60.625em, 90.625em) {
     	margin-top: 0em;
     }
     p {
@@ -572,6 +669,9 @@ footer.site-info {
     }
     a, a:visited {
     	font-weight: 700;
+    }
+    @include break(90.625em) {
+    	margin-top: 5em;
     }
 }
 footer.project-footer, footer.other-footer {
@@ -587,13 +687,36 @@ footer.project-footer, footer.other-footer {
 	margin-right: auto;
 	position: relative;
 	margin-top: 8.5em;
-	@include break(60.625em) {
-		margin-top: 9.5em;
+	@include break(60.625em, 90.625em) {
+		margin-top: 10.5em;
+	}
+	@include break(90.625em) {
+	    margin-top: 13.5em;
+	}
+}
+.fashion {
+	@include break(90.625em) {
+	    margin-top: 11em;
+	}
+
+}
+.other {
+	width: 100%;
+	@include break(90.625em) {
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
 .artist-info {
 	overflow: auto;
+	width: 100%;
+    @include break(90.625em) {
+    	width: 80%;
+        margin-left: auto;
+    	margin-right: auto;
+	}
 }
 .about {
 	width: 95%;
@@ -651,14 +774,22 @@ footer.project-footer, footer.other-footer {
 	    }
 	}
 	.cv {
+		overflow: hidden;
 		ul {
 			padding-left: 2em;
 			margin-bottom: 1.5em;
 		}
 		margin-top: 3em;
-		@include break(64em) {
+		@include break(64em, 90.625em) {
 			margin-top: 2em;
 		}
+	    width: 100%;
+        @include break(90.625em) {
+    	    width: 80%;
+            margin-left: auto;
+    	    margin-right: auto;
+    	    margin-top: 4em;
+	    }
 		.cv-title {
 			width: 2.5em;
 			margin-left: auto;
@@ -704,6 +835,7 @@ footer.project-footer, footer.other-footer {
 		width: 70%;
 	}
 	.grid {
+		overflow: hidden;
 		list-style: none;
 		padding: 0;
 		@include break(38em, 56.25em) {
@@ -767,11 +899,18 @@ footer.project-footer, footer.other-footer {
 }
 
 .project {
+    width: 100%;
 	@include break(38em, 54em) {
 		margin-top: 7em;
 	}
-	@include break(54em) {
+	@include break(54em, 90.625em) {
 		margin-top: 8.5em;
+	}
+	@include break(90.625em) {
+	    width: 70%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 10em;
 	}
 	.page-navigation {
 		min-height: 3.5em;
@@ -821,7 +960,7 @@ footer.project-footer, footer.other-footer {
 			width: 55%;
 		}
 		@include break(90em) {
-			width: 45%;
+			width: 50%;
 		}
 		@include break(37em) {
 			margin-top: 4em;
@@ -886,9 +1025,13 @@ footer.project-footer, footer.other-footer {
 			width: 80%;
 			height: auto;
 		}
-		@include break(60.625em) {
+		@include break(60.625em, 90.625em) {
 			height: 80vh;
 		    width: auto;
+		}
+		@include break(90.625em) {
+			height: 60vh;
+			width: auto;
 		}
 	}
 }

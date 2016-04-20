@@ -515,7 +515,7 @@ ul {
     width: 100%;
   }
 }
-@media only screen and (min-width: 67em) {
+@media only screen and (min-width: 67em) and (max-width: 90.625em) {
   .primary {
     height: 12em;
   }
@@ -523,6 +523,12 @@ ul {
 @media only screen and (min-width: 60.625em) and (max-width: 67em) {
   .primary {
     height: 10em;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .primary {
+    width: 70%;
+    height: 15em;
   }
 }
 .primary .name-telephone {
@@ -604,7 +610,7 @@ ul {
     margin-right: 0.5em;
   }
 }
-@media only screen and (min-width: 73em) {
+@media only screen and (min-width: 73em) and (max-width: 118.75em) {
   .primary .social-media {
     z-index: 20;
     text-align: right;
@@ -614,6 +620,19 @@ ul {
   }
   .primary .social-media .sm {
     width: 2.5em;
+    margin-right: 0.5em;
+  }
+}
+@media only screen and (min-width: 118.75em) {
+  .primary .social-media {
+    z-index: 20;
+    text-align: right;
+    float: left;
+    width: 30%;
+    margin-left: 65%;
+  }
+  .primary .social-media .sm {
+    width: 3em;
     margin-right: 0.5em;
   }
 }
@@ -647,13 +666,29 @@ ul {
 .secondary .back-to-home {
   display: none;
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   .secondary .back-to-home {
     width: 6%;
     display: block;
     position: relative;
     margin-top: 0em;
     margin-left: 4%;
+    height: auto;
+    height: auto;
+    float: left;
+    margin-bottom: 0.25em;
+  }
+  .secondary .back-to-home img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .secondary .back-to-home {
+    width: 4.5%;
+    display: block;
+    position: relative;
+    margin-top: 0em;
+    margin-left: 20%;
     height: auto;
     height: auto;
     float: left;
@@ -711,11 +746,23 @@ ul {
     margin-right: 0.5em;
   }
 }
-@media only screen and (min-width: 73em) {
+@media only screen and (min-width: 73em) and (max-width: 90.625em) {
   .secondary .social-media {
     text-align: right;
     float: left;
     width: 30%;
+  }
+  .secondary .social-media .sm {
+    width: 2.5em;
+    margin-right: 0.5em;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .secondary .social-media {
+    text-align: right;
+    float: left;
+    width: 15%;
+    margin-left: 2.5%;
   }
   .secondary .social-media .sm {
     width: 2.5em;
@@ -729,11 +776,18 @@ ul {
     margin-left: 5%;
   }
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   .secondary .name {
     float: left;
     width: 50%;
     margin-left: 5%;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .secondary .name {
+    float: left;
+    margin-left: 2.5%;
+    width: 35%;
   }
 }
 
@@ -761,7 +815,7 @@ ul {
 .third .back-arrow img {
   width: 100%;
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   .third .back-arrow {
     display: block;
     position: relative;
@@ -772,12 +826,40 @@ ul {
     float: left;
   }
 }
+@media only screen and (min-width: 90.625em) {
+  .third .back-arrow {
+    display: block;
+    position: relative;
+    margin-top: 2em;
+    margin-left: 15%;
+    width: 4.5%;
+    height: auto;
+    height: auto;
+    float: left;
+  }
+}
 .third .back-to-home {
   display: none;
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   .third .back-to-home {
     width: 6%;
+    display: block;
+    position: relative;
+    margin-top: 0em;
+    margin-left: 4%;
+    height: auto;
+    height: auto;
+    float: left;
+    margin-bottom: 0.25em;
+  }
+  .third .back-to-home img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .third .back-to-home {
+    width: 4.5%;
     display: block;
     position: relative;
     margin-top: 0em;
@@ -838,11 +920,23 @@ ul {
     margin-right: 0.5em;
   }
 }
-@media only screen and (min-width: 73em) {
+@media only screen and (min-width: 73em) and (max-width: 90.625em) {
   .third .social-media {
     text-align: right;
     float: left;
     width: 28%;
+  }
+  .third .social-media .sm {
+    width: 2.5em;
+    margin-right: 0.5em;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .third .social-media {
+    text-align: right;
+    float: left;
+    width: 15%;
+    margin-left: 2.5%;
   }
   .third .social-media .sm {
     width: 2.5em;
@@ -856,11 +950,18 @@ ul {
     margin-left: 5%;
   }
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   .third .name {
     float: left;
     width: 45%;
     margin-left: 6%;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .third .name {
+    float: left;
+    width: 35%;
+    margin-left: 2.5%;
   }
 }
 
@@ -956,7 +1057,6 @@ ul {
 }
 @media only screen and (min-width: 60.625em) {
   .home {
-    width: 90%;
     min-height: 25em;
   }
   .home a.about-icon, .home a.fashion-icon {
@@ -1028,13 +1128,34 @@ ul {
     opacity: 1;
   }
 }
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
+  .home {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .home {
+    width: 70%;
+  }
+}
+
+.fashion-projects {
+  width: 100%;
+}
+@media only screen and (min-width: 90.625em) {
+  .fashion-projects {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 footer.site-info {
   text-align: center;
   margin-top: 2em;
   margin-bottom: 0.5em;
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   footer.site-info {
     margin-top: 0em;
   }
@@ -1044,6 +1165,11 @@ footer.site-info p {
 }
 footer.site-info a, footer.site-info a:visited {
   font-weight: 700;
+}
+@media only screen and (min-width: 90.625em) {
+  footer.site-info {
+    margin-top: 5em;
+  }
 }
 
 footer.project-footer, footer.other-footer {
@@ -1062,14 +1188,44 @@ footer.project-footer, footer.other-footer {
   position: relative;
   margin-top: 8.5em;
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   .fashion, .about, .project, .other {
-    margin-top: 9.5em;
+    margin-top: 10.5em;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .fashion, .about, .project, .other {
+    margin-top: 13.5em;
+  }
+}
+
+@media only screen and (min-width: 90.625em) {
+  .fashion {
+    margin-top: 11em;
+  }
+}
+
+.other {
+  width: 100%;
+}
+@media only screen and (min-width: 90.625em) {
+  .other {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .artist-info {
   overflow: auto;
+  width: 100%;
+}
+@media only screen and (min-width: 90.625em) {
+  .artist-info {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .about {
@@ -1145,15 +1301,25 @@ footer.project-footer, footer.other-footer {
   margin-bottom: 1.5em;
 }
 .about .cv {
+  overflow: hidden;
   margin-top: 3em;
+  width: 100%;
 }
 .about .cv ul {
   padding-left: 2em;
   margin-bottom: 1.5em;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64em) and (max-width: 90.625em) {
   .about .cv {
     margin-top: 2em;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .about .cv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
   }
 }
 .about .cv .cv-title {
@@ -1208,6 +1374,7 @@ footer.project-footer, footer.other-footer {
   }
 }
 .fashion .grid {
+  overflow: hidden;
   list-style: none;
   padding: 0;
 }
@@ -1282,14 +1449,25 @@ footer.project-footer, footer.other-footer {
   }
 }
 
+.project {
+  width: 100%;
+}
 @media only screen and (min-width: 38em) and (max-width: 54em) {
   .project {
     margin-top: 7em;
   }
 }
-@media only screen and (min-width: 54em) {
+@media only screen and (min-width: 54em) and (max-width: 90.625em) {
   .project {
     margin-top: 8.5em;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .project {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
   }
 }
 .project .page-navigation {
@@ -1356,7 +1534,7 @@ footer.project-footer, footer.other-footer {
 }
 @media only screen and (min-width: 90em) {
   .project .concept {
-    width: 45%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 37em) {
@@ -1437,9 +1615,15 @@ footer.project-footer, footer.other-footer {
     height: auto;
   }
 }
-@media only screen and (min-width: 60.625em) {
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   .photo-carousel img {
     height: 80vh;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .photo-carousel img {
+    height: 60vh;
     width: auto;
   }
 }

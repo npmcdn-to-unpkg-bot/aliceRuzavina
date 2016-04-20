@@ -21,6 +21,16 @@ var PROJECTS_DATA = [{
 	"ProjectImage": "images/tailoring/main-tailoring.jpg",
 	"Concept": "descriptions/tailoring.html",
 	"Photoshoot": [{
+    "src": 'images/tailoring/photoshoot-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/tailoring/photoshoot-2.jpg',
+    "title": 'Photoshoot 2'
+  }, {
+    "src": 'images/tailoring/photoshoot-3.jpg',
+    "title": 'Photoshoot 3'
+  }],
+	"Sketchbook": [{
     "src": 'images/tailoring/research-1.jpg',
     "title": 'Research 1',
     "style": "'color': 'yellow'"
@@ -33,25 +43,25 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/tailoring/research-4.jpg',
     "title": 'Research 4'
-  }],
-	"Sketchbook": [{
-    "src": 'images/tailoring/photoshoot-1.jpg',
-    "title": 'Photoshoot 1'
-  }, {
-    "src": 'images/tailoring/photoshoot-2.jpg',
-    "title": 'Photoshoot 2'
-  }, {
-    "src": 'images/tailoring/photoshoot-3.jpg',
-    "title": 'Photoshoot 3'
   }]
 }, {
 	"ID": "bottega-veneta",
-	"Title": "Bottega Veneta",
+	"Title": "Sustainability",
   "TitleImage": "images/bottega-veneta/bottega-veneta-title.png",
   "Border": "images/bottega-veneta/bottega-veneta-border.png",
 	"ProjectImage": "images/bottega-veneta/main-bv.jpg",
 	"Concept": "descriptions/bottega-veneta.html",
 	"Photoshoot": [{
+    "src": 'images/bottega-veneta/photoshoot-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/bottega-veneta/photoshoot-2.jpg',
+    "title": 'Photoshoot 2'
+  }, {
+    "src": 'images/bottega-veneta/photoshoot-3.jpg',
+    "title": 'Photoshoot 3'
+  }],
+	"Sketchbook": [{
     "src": 'images/bottega-veneta/research-1.jpg',
     "title": 'Research 1'
   }, {
@@ -63,16 +73,9 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/bottega-veneta/research-4.jpg',
     "title": 'Research 4'
-  }],
-	"Sketchbook": [{
-    "src": 'images/bottega-veneta/photoshoot-1.jpg',
-    "title": 'Photoshoot 1'
   }, {
-    "src": 'images/bottega-veneta/photoshoot-2.jpg',
-    "title": 'Photoshoot 2'
-  }, {
-    "src": 'images/bottega-veneta/photoshoot-3.jpg',
-    "title": 'Photoshoot 3'
+    "src": 'images/bottega-veneta/research-5.jpg',
+    "title": 'Research 4'
   }]
 }, {
 	"ID": "toile de joeux creatures",
@@ -83,6 +86,13 @@ var PROJECTS_DATA = [{
 	"ProjectImage": "images/creatures/main-creatures.jpg",
 	"Concept": "descriptions/creatures.html",
 	"Photoshoot": [{
+    "src": 'images/creatures/photoshoot1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/creatures/photoshoot2.jpg',
+    "title": 'Photoshoot 2'
+  }],
+	"Sketchbook": [{
     "src": 'images/creatures/research-1.jpg',
     "title": 'Research 1'
   }, {
@@ -91,13 +101,6 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/creatures/research-3.jpg',
     "title": 'Research 3'
-  }],
-	"Sketchbook": [{
-    "src": 'images/creatures/photoshoot1.jpg',
-    "title": 'Photoshoot 1'
-  }, {
-    "src": 'images/creatures/photoshoot2.jpg',
-    "title": 'Photoshoot 2'
   }]
 }, {
 	"ID": "accessory",
