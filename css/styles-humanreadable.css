@@ -393,8 +393,15 @@ th {
   padding: 0;
 }
 
+* {
+  font-family: 'Overlock', cursive;
+  line-height: 1.5em;
+  color: #323232;
+}
+
 body {
   font-size: 18px;
+  background: #fef7e9;
 }
 
 ul {
@@ -402,8 +409,9 @@ ul {
   padding: 0;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
+  color: #323232;
 }
 
 p {
@@ -417,6 +425,10 @@ h1, h2, h3, h4, h5, h6 {
 img {
   width: 100%;
   height: auto;
+}
+
+ul {
+  list-style-image: url("../images/dot.png");
 }
 
 .pointer {
@@ -1017,6 +1029,9 @@ footer.site-info {
 footer.site-info p {
   font-size: 0.65em;
 }
+footer.site-info a, footer.site-info a:visited {
+  font-weight: 700;
+}
 
 footer.project-footer, footer.other-footer {
   margin-top: 6em;
@@ -1111,13 +1126,17 @@ footer.project-footer, footer.other-footer {
 }
 .about .bio .email {
   font-weight: bold;
-  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.about .bio p.text {
+  margin-bottom: 1.5em;
 }
 .about .cv {
   margin-top: 3em;
 }
 .about .cv ul {
   padding-left: 2em;
+  margin-bottom: 1.5em;
 }
 @media only screen and (min-width: 64em) {
   .about .cv {
@@ -1132,7 +1151,7 @@ footer.project-footer, footer.other-footer {
 }
 .about .cv .cv-border {
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .about .cv .left-column, .about .cv .right-column {
   width: 100%;
@@ -1147,6 +1166,13 @@ footer.project-footer, footer.other-footer {
   .about .cv .left-column {
     margin-right: 10%;
   }
+}
+.about .cv h4 {
+  margin-bottom: 1.5em;
+  font-size: 1.15em;
+}
+.about .cv li {
+  margin-bottom: 1em;
 }
 
 .fashion {
@@ -1336,6 +1362,9 @@ footer.project-footer, footer.other-footer {
   .project .concept .title-image {
     width: 8em;
   }
+}
+.project p {
+  margin-bottom: 1.5em;
 }
 
 .photo-carousel {

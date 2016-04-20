@@ -1,12 +1,19 @@
+* {
+	font-family: 'Overlock', cursive;
+	line-height: 1.5em;
+	color: $font-color;
+}
 body {
 	font-size: 18px;
+	background: #fef7e9;
 }
 ul {
 	margin: 0;
 	padding: 0;
 }
-a {
+a, a:visited {
 	text-decoration: none;
+	color: $font-color;
 }
 p {
 	margin: 0;
@@ -17,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 img {
 	width: 100%;
 	height: auto;
+}
+ul {
+    list-style-image: url('../images/dot.png');
 }
 .pointer {
 	cursor: pointer;
@@ -549,6 +559,9 @@ footer.site-info {
     p {
     	font-size: 0.65em;
     }
+    a, a:visited {
+    	font-weight: 700;
+    }
 }
 footer.project-footer, footer.other-footer {
 	margin-top: 6em;
@@ -620,12 +633,16 @@ footer.project-footer, footer.other-footer {
 	    }
 	    .email {
 		    font-weight: bold;
-		    margin-top: 1.5em;
+		    margin-bottom: 0.5em;
+	    }
+	    p.text {
+	    	margin-bottom: 1.5em;
 	    }
 	}
 	.cv {
 		ul {
 			padding-left: 2em;
+			margin-bottom: 1.5em;
 		}
 		margin-top: 3em;
 		@include break(64em) {
@@ -639,7 +656,7 @@ footer.project-footer, footer.other-footer {
 		}
 		.cv-border {
 			width: 100%;
-			margin-bottom: 2em;
+			margin-bottom: 1em;
 		}
 		.left-column, .right-column {
 			width: 100%;
@@ -652,6 +669,13 @@ footer.project-footer, footer.other-footer {
 			@include break(52.5em) {
 				margin-right: 10%;
 			}
+		}
+		h4 {
+			margin-bottom: 1.5em;
+            font-size: 1.15em;
+		}
+		li {
+			margin-bottom: 1em;
 		}
 	}
 }
@@ -799,6 +823,9 @@ footer.project-footer, footer.other-footer {
 			    width: 8em;
 		    }
 		}
+	}
+	p {
+		margin-bottom: 1.5em;
 	}
 }
 

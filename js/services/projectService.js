@@ -21,31 +21,28 @@ var PROJECTS_DATA = [{
 	"ProjectImage": "images/tailoring/main-tailoring.jpg",
 	"Concept": "descriptions/tailoring.html",
 	"Photoshoot": [{
-    "src": 'images/tailoring/research1.jpg',
+    "src": 'images/tailoring/research-1.jpg',
     "title": 'Research 1',
     "style": "'color': 'yellow'"
   }, {
-    "src": 'images/tailoring/research2.jpg',
+    "src": 'images/tailoring/research-2.jpg',
     "title": 'Research 2'
   }, {
-    "src": 'images/tailoring/research3.jpg',
+    "src": 'images/tailoring/research-3.jpg',
     "title": 'Research 3'
   }, {
-    "src": 'images/tailoring/research4.jpg',
+    "src": 'images/tailoring/research-4.jpg',
     "title": 'Research 4'
   }],
 	"Sketchbook": [{
-    "src": 'images/tailoring/photoshoot1.jpg',
+    "src": 'images/tailoring/photoshoot-1.jpg',
     "title": 'Photoshoot 1'
   }, {
-    "src": 'images/tailoring/photoshoot2.jpg',
+    "src": 'images/tailoring/photoshoot-2.jpg',
     "title": 'Photoshoot 2'
   }, {
-    "src": 'images/tailoring/photoshoot3.jpg',
+    "src": 'images/tailoring/photoshoot-3.jpg',
     "title": 'Photoshoot 3'
-  }, {
-    "src": 'images/tailoring/photoshoot4.jpg',
-    "title": 'Photoshoot 4'
   }]
 }, {
 	"ID": "bottega-veneta",
@@ -55,49 +52,44 @@ var PROJECTS_DATA = [{
 	"ProjectImage": "images/bottega-veneta/main-bv.jpg",
 	"Concept": "descriptions/bottega-veneta.html",
 	"Photoshoot": [{
-    "src": 'images/bottega-veneta/research1.jpg',
+    "src": 'images/bottega-veneta/research-1.jpg',
     "title": 'Research 1'
   }, {
-    "src": 'images/bottega-veneta/research2.jpg',
+    "src": 'images/bottega-veneta/research-2.jpg',
     "title": 'Research 2'
   }, {
-    "src": 'images/bottega-veneta/research3.jpg',
+    "src": 'images/bottega-veneta/research-3.jpg',
     "title": 'Research 3'
+  }, {
+    "src": 'images/bottega-veneta/research-4.jpg',
+    "title": 'Research 4'
   }],
 	"Sketchbook": [{
-    "src": 'images/bottega-veneta/photoshoot1.jpg',
+    "src": 'images/bottega-veneta/photoshoot-1.jpg',
     "title": 'Photoshoot 1'
   }, {
-    "src": 'images/bottega-veneta/photoshoot2.jpg',
+    "src": 'images/bottega-veneta/photoshoot-2.jpg',
     "title": 'Photoshoot 2'
   }, {
-    "src": 'images/bottega-veneta/photoshoot3.jpg',
+    "src": 'images/bottega-veneta/photoshoot-3.jpg',
     "title": 'Photoshoot 3'
-  }, {
-    "src": 'images/bottega-veneta/photoshoot4.jpg',
-    "title": 'Photoshoot 4'
-  }, {
-    "src": 'images/bottega-veneta/photoshoot5.jpg',
-    "title": 'Photoshoot 5'
-  }, {
-    "src": 'images/bottega-veneta/photoshoot6.jpg',
-    "title": 'Photoshoot 6'
   }]
 }, {
 	"ID": "toile de joeux creatures",
+  "seen": true,
 	"Title": "Toile de Joeux Creatures",
   "TitleImage": "images/creatures/creatures-title2.png",
   "Border": "images/creatures/creatures-border.png",
 	"ProjectImage": "images/creatures/main-creatures.jpg",
 	"Concept": "descriptions/creatures.html",
 	"Photoshoot": [{
-    "src": 'images/creatures/research1.jpg',
+    "src": 'images/creatures/research-1.jpg',
     "title": 'Research 1'
   }, {
-    "src": 'images/creatures/research2.jpg',
+    "src": 'images/creatures/research-2.jpg',
     "title": 'Research 2'
   }, {
-    "src": 'images/creatures/research3.jpg',
+    "src": 'images/creatures/research-3.jpg',
     "title": 'Research 3'
   }],
 	"Sketchbook": [{
@@ -111,6 +103,7 @@ var PROJECTS_DATA = [{
 	"ID": "accessory",
 	"Title": "Accessory Project",
   "TitleImage": "images/accessory/accessory-title.png",
+  "Border": "images/accessory/accessory-border.png",
 	"ProjectImage": "images/accessory/main-accessory.jpg",
 	"Concept": "descriptions/accessory.html",
 	"Photoshoot": [{
@@ -140,6 +133,7 @@ var PROJECTS_DATA = [{
 	"ID": "shirt",
 	"Title": "Shirt Project",
   "TitleImage": "images/shirt/shirt-title.png",
+  "Border": "images/shirt/shirt-border.png",
 	"ProjectImage": "images/shirt/main-shirt.jpg",
 	"Concept": "descriptions/shirt.html",
 	"Photoshoot": [{
@@ -160,38 +154,37 @@ var PROJECTS_DATA = [{
 	"ID": "white",
 	"Title": "White Project",
   "TitleImage": "images/white-project/white-title.png",
+  "Border": "images/white-project/white-border.png",
 	"ProjectImage": "images/white-project/main-white.jpg",
 	"Concept": "descriptions/white.html",
 	"Photoshoot": [{
-    "src": 'images/white-project/photoshoot1.jpg',
+    "src": 'images/white-project/photoshoot-1.jpg',
     "title": 'Photoshoot 1'
   }, {
-    "src": 'images/white-project/photoshoot2.jpg',
+    "src": 'images/white-project/photoshoot-2.jpg',
     "title": 'Photoshoot 2'
   }, {
-    "src": 'images/white-project/photoshoot3.jpg',
+    "src": 'images/white-project/photoshoot-3.jpg',
     "title": 'Photoshoot 3'
-  }, {
-    "src": 'images/white-project/photoshoot4.jpg',
-    "title": 'Photoshoot 4'
   }],
 	"Sketchbook": [{
-    "src": 'images/white-project/research1.jpg',
+    "src": 'images/white-project/research-1.jpg',
     "title": 'Research 1'
   }, {
-    "src": 'images/white-project/research2.jpg',
+    "src": 'images/white-project/research-2.jpg',
     "title": 'Research 2'
   }, {
-    "src": 'images/white-project/research3.jpg',
+    "src": 'images/white-project/research-3.jpg',
     "title": 'Research 3'
   }, {
-    "src": 'images/white-project/research4.jpg',
+    "src": 'images/white-project/research-4.jpg',
     "title": 'Research 4'
   }]
 }, {
 	"ID": "floge",
 	"Title": "Flöge Project",
   "TitleImage": "images/floge/floge-title.png",
+  "Border": "images/floge/floge-border.png",
 	"ProjectImage": "images/floge/main-floge.jpg",
 	"Concept": "descriptions/floge.html",
 	"Photoshoot": [{

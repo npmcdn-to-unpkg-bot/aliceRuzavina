@@ -18,12 +18,8 @@ app.config(function($routeProvider) {
 		templateUrl: 'templates/fashion-projects.html',
 		controller: 'FashionCtrl as ctrl'
 	})
-	.when('/textile', {
-		templateUrl: 'templates/other.html',
-		controller: 'TextileCtrl as ctrl'
-	})
     .when('/illustration', {
-		templateUrl: 'templates/other.html',
+		templateUrl: 'templates/illustration.html',
 		controller: 'IllustrationCtrl as ctrl'
 	})
 	.when('/photography', {
@@ -37,6 +33,10 @@ app.config(function($routeProvider) {
 	.when('/fashion-projects/:projectId', {
 		templateUrl: 'templates/project.html',
 		controller: 'ProjectCtrl as ctrl'
+	})
+	.when('/textile', {
+		templateUrl: 'templates/other.html',
+		controller: 'TextileCtrl as ctrl'
 	})
 	.otherwise({
 		redirectTo: '/home'

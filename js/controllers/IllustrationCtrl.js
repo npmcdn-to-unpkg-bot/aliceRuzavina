@@ -1,5 +1,6 @@
 app.controller('IllustrationCtrl', ['$scope', '$routeParams', '$location', function(scope, $routeParams, $location) {
-	scope.images = WORKS_DATA;
+	scope.images = ILLUSTRATION_DATA;
+    console.log(scope.images);
     this.$location = $location;
 	this.currentPath = $location.path();
     scope.currentIndex = 0; // Initially the index is at the first image
@@ -19,13 +20,24 @@ app.controller('IllustrationCtrl', ['$scope', '$routeParams', '$location', funct
     console.log('ill');
 }])
 
-var WORKS_DATA = [{
-    src: 'images/illustration/ill-1.jpg',
-    title: 'Pic 1'
+var ILLUSTRATION_DATA = [{
+    src: 'images/illustration/ill-01.jpg',
   }, {
-    src: 'images/pendant_hand.jpg',
-    title: 'Pic 2'
+    src: 'images/illustration/ill-02.jpg',
   }, {
-    src: 'images/expbody2.jpg',
-    title: 'Pic 3'
+    src: 'images/illustration/ill-03.jpg',
+  }, {
+    src: 'images/illustration/ill-04.jpg',
+  }, {
+    src: 'images/illustration/ill-05.jpg',
+  }, {
+    src: 'images/illustration/ill-06.jpg',
+  }, {
+    src: 'images/illustration/ill-07.jpg',
+  }, {
+    src: 'images/illustration/ill-08.jpg',
+  }, {
+    src: 'images/illustration/ill-09.jpg',
+  }, {
+    src: 'images/illustration/ill-10.jpg',
   }]

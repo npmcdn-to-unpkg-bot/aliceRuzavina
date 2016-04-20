@@ -16,18 +16,18 @@
 
 <main class="project">
     <nav class="page-navigation">
-        <a class="pointer" ng-click="ctrl.gotoPhotoshoot()"><img src="images/photoshoot.png"></a>
+        <a class="pointer" ng-click="ctrl.gotoPhotoshoot()" ng-hide="ctrl.project.seen"><img src="images/photoshoot.png"></a>
         <a class="pointer" ng-click="ctrl.gotoConcept()"><img src="images/about-title.png"></a>
         <a class="pointer" ng-click="ctrl.gotoSketchbook()"><img src="images/dd.png"></a>
     </nav>
-    <section class="photo-carousel slider" id="photoshoot">
+    <section class="photo-carousel slider" id="photoshoot" ng-hide="ctrl.project.seen">
     <div class="border-top"><img src="{{ctrl.project.Border}}"></div>
-        <img ng-repeat="photo in ctrl.photoshoot"  class="image-carousel" class="img-carousel" src="{{photo.src}}" ng-show="photo.visible">
+        <img class="image-carousel" ng-repeat="sketch in ctrl.sketchbook" class="img-carousel" src="{{sketch.src}}" ng-show="sketch.visible">    
         <div class="arrows">
-            <a class="previous" ng-click="ctrl.previous()">
+            <a class="previous" ng-click="ctrl.previousSketch()">
                 <img src="images/left-arrow.png" />
             </a>
-            <a class="next" ng-click="ctrl.next()">
+            <a class="next" ng-click="ctrl.nextSketch()">
                 <img src="images/right-arrow.png" />
             </a>
         </div>
@@ -41,14 +41,14 @@
 
     <section class="photo-carousel sketchbook" id="sketchbook">
         <div class="border-top"><img src="{{ctrl.project.Border}}"></div>
-        <img class="image-carousel" ng-repeat="sketch in ctrl.sketchbook" class="img-carousel" src="{{sketch.src}}" ng-show="sketch.visible">
+        <img ng-repeat="photo in ctrl.photoshoot"  class="image-carousel" class="img-carousel" src="{{photo.src}}" ng-show="photo.visible">
        <div class="arrows-sketches">
-                <a class="previous" ng-click="ctrl.previousSketch()">
-                    <img src="images/left-arrow.png" />
-                </a>
-                <a class="next" ng-click="ctrl.nextSketch()">
-                    <img src="images/right-arrow.png" />
-                </a>
+            <a class="previous" ng-click="ctrl.previous()">
+                <img src="images/left-arrow.png" />
+            </a>
+            <a class="next" ng-click="ctrl.next()">
+                <img src="images/right-arrow.png" />
+            </a>
         </div>
         <div class="border-bottom"><img src="{{ctrl.project.Border}}"></div>
     </section>
