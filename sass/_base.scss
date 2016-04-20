@@ -31,8 +31,15 @@ ul {
 .pointer {
 	cursor: pointer;
 }
+.back-arrow, .back-to-home, .sm {
+		-webkit-transition: opacity 0.25s ease-in-out;
+        -moz-transition: opacity 0.25s ease-in-out;
+        -ms-transition: opacity 0.25s ease-in-out;
+        -o-transition: opacity 0.25s ease-in-out;
+        transition: opacity 0.25s ease-in-out;
+}
 .back-to-home:hover {
-		opacity: 0.3;
+	opacity: 0.3;
 }
 .back-to-home-fixed {
     width: 4em;
@@ -70,6 +77,10 @@ ul {
 }
 .sm:hover {
 	opacity: 0.25;
+}
+.coming {
+	text-align: center;
+    font-size: 3em;
 }
 .primary {
 	z-index: 10;
@@ -724,8 +735,16 @@ footer.project-footer, footer.other-footer {
 				}
 				h2 {
 					margin-top: 30%;
+					color: #051f45;
 				}
 			}
+		}
+		.project-image {
+			-webkit-transition: opacity 0.5s ease-in-out;
+            -moz-transition: opacity 0.5s ease-in-out;
+            -ms-transition: opacity 0.5s ease-in-out;
+            -o-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
 		}
 		.project-icon:hover {
 			.overlay {

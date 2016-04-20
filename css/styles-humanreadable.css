@@ -435,6 +435,14 @@ ul {
   cursor: pointer;
 }
 
+.back-arrow, .back-to-home, .sm {
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
 .back-to-home:hover {
   opacity: 0.3;
 }
@@ -485,6 +493,11 @@ ul {
 
 .sm:hover {
   opacity: 0.25;
+}
+
+.coming {
+  text-align: center;
+  font-size: 3em;
 }
 
 .primary {
@@ -1243,6 +1256,14 @@ footer.project-footer, footer.other-footer {
 }
 .fashion .grid .project-icon .overlay h2 {
   margin-top: 30%;
+  color: #051f45;
+}
+.fashion .grid .project-image {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .fashion .grid .project-icon:hover .overlay {
   display: block;

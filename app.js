@@ -23,11 +23,11 @@ app.config(function($routeProvider) {
 		controller: 'IllustrationCtrl as ctrl'
 	})
 	.when('/photography', {
-		templateUrl: 'templates/other.html',
+		templateUrl: 'templates/photography.html',
 		controller: 'PhotographyCtrl as ctrl'
 	})
     .when('/artworks', {
-		templateUrl: 'templates/other.html',
+		templateUrl: 'templates/artwork.html',
 		controller: 'ArtworksCtrl as ctrl'
 	})
 	.when('/fashion-projects/:projectId', {
