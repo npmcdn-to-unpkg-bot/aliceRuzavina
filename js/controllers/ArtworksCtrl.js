@@ -1,30 +1,30 @@
 app.controller('ArtworksCtrl', ['$scope', '$routeParams', '$location', function(scope, $routeParams, $location) {
-	scope.images = WORKS_DATA;
+	scope.works = ARTWORKS_DATA;
     this.$location = $location;
 	this.currentPath = $location.path();
     scope.currentIndex = 0; // Initially the index is at the first image
     scope.next = function() {
-        scope.currentIndex < scope.images.length - 1 ? scope.currentIndex++ : scope.currentIndex = 0;
+        scope.currentIndex < scope.works.length - 1 ? scope.currentIndex++ : scope.currentIndex = 0;
     };
     scope.prev = function() {
-        scope.currentIndex > 0 ? scope.currentIndex-- : scope.currentIndex = scope.images.length - 1;
+        scope.currentIndex > 0 ? scope.currentIndex-- : scope.currentIndex = scope.works.length - 1;
     };
     scope.$watch('currentIndex', function() {
-        scope.images.forEach(function(image) {
-            image.visible = false;
+        scope.works.forEach(function(work) {
+            work.visible = false;
         });
 
-        scope.images[scope.currentIndex].visible = true; // make the current image visible
+        scope.works[scope.currentIndex].visible = true; // make the current image visible
     });
 }])
 
-var WORKS_DATA = [{
-    src: 'images/album_cover_riso.jpg',
+var ARTWORKS_DATA = [{
+    src: 'images/artworks/artwork-2.jpg',
     title: 'Pic 1'
   }, {
-    src: 'images/pendant_hand.jpg',
+    src: 'images/artworks/artwork-1.jpg',
     title: 'Pic 2'
   }, {
-    src: 'images/expbody2.jpg',
+    src: 'images/artworks/artwork-3.jpg',
     title: 'Pic 3'
   }]

@@ -756,6 +756,9 @@ footer.project-footer, footer.other-footer {
 	.bio {
 		width: 100%;
 		margin-top: 2em;
+	    .tel-number, .email {
+	    	text-align: center;
+		}
 	    @include break(30em, 45em) {
 		    width: 100%;
 		    margin-top: 0;
@@ -764,6 +767,9 @@ footer.project-footer, footer.other-footer {
 	    	overflow: auto;
 		    width: 60%;
 		    margin-top: 0;
+		    .tel-number, .email {
+		    	text-align: left;
+		    }
 	    }
 	    .email {
 		    font-weight: bold;
