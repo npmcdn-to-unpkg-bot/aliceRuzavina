@@ -57,16 +57,33 @@ function ProjectCtrl($routeParams, $location, ProjectService, $anchorScroll) {
     this.ProjectService = ProjectService;
     this.project = this.ProjectService.getProject($routeParams.projectId);
     this.photoshoot = this.project.Photoshoot;
+    this.photoshootIcons = this.project.PhotoshootIcons;
     this.sketchbook = this.project.Sketchbook;
+    this.sketchIcons = this.project.SketchIcons;
     this.currentIndex = 0;
     this.photo = this.project.Photoshoot[this.currentIndex];
     this.photo.visible = true;
+    this.photoIcon = this.project.PhotoshootIcons[this.currentIndex];
     this.currentIndexSketch = 0;
     this.sketch = this.project.Sketchbook[this.currentIndexSketch];
     this.sketch.visible = true;
-    this.stylesPhotoshoot= {"background": "rgba(200,200,200, 0.5"};
-    this.stylesSketchbook= {"background": "rgba(200,200,200, 0.5"};
-        console.log(this.project.Border);
+    this.changeIcon();
+    this.changeIconSketch();
+}
+
+ProjectCtrl.prototype.changeIcon = function() {
+    for(var i = 0; i<this.photoshootIcons.length; i++) {
+        this.project.PhotoshootIcons[i].Status = 'none';
+    }
+    this.photoshootIcons[this.currentIndex].Status = 'active';   
+}
+
+ProjectCtrl.prototype.changeIconSketch = function() {
+    for(var i = 0; i<this.sketchIcons.length; i++) {
+        this.project.SketchIcons[i].Status = 'none';
+    }
+    this.sketchIcons[this.currentIndexSketch].Status = 'active'; 
+    console.log(this.sketchIcons[this.currentIndexSketch]); 
 }
 
 ProjectCtrl.prototype.watch = function(image) {
@@ -89,6 +106,7 @@ ProjectCtrl.prototype.next = function() {
     }
     this.photo = this.project.Photoshoot[this.currentIndex];
     this.photo.visible = true;
+    this.changeIcon();
 }
 
 ProjectCtrl.prototype.previous = function() {
@@ -103,6 +121,7 @@ ProjectCtrl.prototype.previous = function() {
     }
     this.photo = this.project.Photoshoot[this.currentIndex];
     this.photo.visible = true;
+    this.changeIcon();
 }
 
 ProjectCtrl.prototype.nextSketch = function() {
@@ -117,6 +136,7 @@ ProjectCtrl.prototype.nextSketch = function() {
     }
     this.sketch = this.project.Sketchbook[this.currentIndexSketch];
     this.sketch.visible = true;
+    this.changeIconSketch();
 }
 
 ProjectCtrl.prototype.previousSketch = function() {
@@ -131,6 +151,7 @@ ProjectCtrl.prototype.previousSketch = function() {
     }
     this.sketch = this.project.Sketchbook[this.currentIndexSketch];
     this.sketch.visible = true;
+    this.changeIconSketch();
 }
 
 ProjectCtrl.prototype.gotoPhotoshoot = function($routeParams, $location, ProjectService, $anchorScroll) {

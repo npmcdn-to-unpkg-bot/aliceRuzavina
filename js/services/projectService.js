@@ -30,6 +30,16 @@ var PROJECTS_DATA = [{
     "src": 'images/tailoring/photoshoot-3.jpg',
     "title": 'Photoshoot 3'
   }],
+  "PhotoshootIcons": [{
+    "src": 'images/tailoring/photoshoot-icon-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/tailoring/photoshoot-icon-2.jpg',
+    "title": 'Photoshoot 2'
+  }, {
+    "src": 'images/tailoring/photoshoot-icon-3.jpg',
+    "title": 'Photoshoot 3'
+  }],
 	"Sketchbook": [{
     "src": 'images/tailoring/research-1.jpg',
     "title": 'Research 1',
@@ -42,6 +52,19 @@ var PROJECTS_DATA = [{
     "title": 'Research 3'
   }, {
     "src": 'images/tailoring/research-4.jpg',
+    "title": 'Research 4'
+  }],
+  "SketchIcons": [{
+    "src": 'images/tailoring/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/tailoring/research-icon-2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/tailoring/research-icon-3.jpg',
+    "title": 'Research 3'
+  }, {
+    "src": 'images/tailoring/research-icon-4.jpg',
     "title": 'Research 4'
   }]
 }, {
@@ -61,6 +84,16 @@ var PROJECTS_DATA = [{
     "src": 'images/bottega-veneta/photoshoot-3.jpg',
     "title": 'Photoshoot 3'
   }],
+  "PhotoshootIcons": [{
+    "src": 'images/bottega-veneta/photoshoot-icon-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/bottega-veneta/photoshoot-icon-2.jpg',
+    "title": 'Photoshoot 2'
+  }, {
+    "src": 'images/bottega-veneta/photoshoot-icon-3.jpg',
+    "title": 'Photoshoot 3'
+  }],
 	"Sketchbook": [{
     "src": 'images/bottega-veneta/research-1.jpg',
     "title": 'Research 1'
@@ -75,7 +108,23 @@ var PROJECTS_DATA = [{
     "title": 'Research 4'
   }, {
     "src": 'images/bottega-veneta/research-5.jpg',
+    "title": 'Research 5'
+  }],
+  "SketchIcons": [{
+    "src": 'images/bottega-veneta/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/bottega-veneta/research-icon-2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/bottega-veneta/research-icon-3.jpg',
+    "title": 'Research 3'
+  }, {
+    "src": 'images/bottega-veneta/research-icon-4.jpg',
     "title": 'Research 4'
+  }, {
+    "src": 'images/bottega-veneta/research-icon-5.jpg',
+    "title": 'Research 5'
   }]
 }, {
 	"ID": "toile de joeux creatures",
@@ -92,6 +141,13 @@ var PROJECTS_DATA = [{
     "src": 'images/creatures/photoshoot2.jpg',
     "title": 'Photoshoot 2'
   }],
+  "PhotoshootIcons": [{
+    "src": 'images/creatures/photoshoot-icon-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/creatures/photoshoot-icon-2.jpg',
+    "title": 'Photoshoot 2'
+  }],
 	"Sketchbook": [{
     "src": 'images/creatures/research-1.jpg',
     "title": 'Research 1'
@@ -100,6 +156,16 @@ var PROJECTS_DATA = [{
     "title": 'Research 2'
   }, {
     "src": 'images/creatures/research-3.jpg',
+    "title": 'Research 3'
+  }],
+  "SketchIcons": [{
+    "src": 'images/creatures/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/creatures/research-icon-2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/creatures/research-icon-3.jpg',
     "title": 'Research 3'
   }]
 }, {
@@ -114,6 +180,13 @@ var PROJECTS_DATA = [{
     "title": 'Photoshoot 1'
   }, {
     "src": 'images/accessory/photoshoot2.jpg',
+    "title": 'Photoshoot 2'
+  }],
+  "PhotoshootIcons": [{
+    "src": 'images/accessory/photoshoot-icon-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/accessory/photoshoot-icon-2.jpg',
     "title": 'Photoshoot 2'
   }],
 	"Sketchbook": [{
@@ -131,6 +204,22 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/accessory/research5.jpg',
     "title": 'Research 5'
+  }],
+  "SketchIcons": [{
+    "src": 'images/accessory/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/accessory/research-icon-2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/accessory/research-icon-3.jpg',
+    "title": 'Research 3'
+  }, {
+    "src": 'images/accessory/research-icon-4.jpg',
+    "title": 'Research 4'
+  }, {
+    "src": 'images/accessory/research-icon-5.jpg',
+    "title": 'Research 5'
   }]
 }, {
 	"ID": "shirt",
@@ -145,12 +234,32 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/shirt/photoshoot2.jpg',
     "title": 'Photoshoot 2'
+  }, {
+    "src": 'images/shirt/photoshoot3.jpg',
+    "title": 'Photoshoot 3'
+  }],
+  "PhotoshootIcons": [{
+    "src": 'images/shirt/photoshoot-icon-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/shirt/photoshoot-icon-2.jpg',
+    "title": 'Photoshoot 2'
+  }, {
+    "src": 'images/shirt/photoshoot-icon-3.jpg',
+    "title": 'Photoshoot 3'
   }],
 	"Sketchbook": [{
     "src": 'images/shirt/research1.jpg',
     "title": 'Research 1'
   }, {
     "src": 'images/shirt/research2.jpg',
+    "title": 'Research 2'
+  }],
+  "SketchIcons": [{
+    "src": 'images/shirt/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/shirt/research-icon-2.jpg',
     "title": 'Research 2'
   }]
 }, {
@@ -170,6 +279,16 @@ var PROJECTS_DATA = [{
     "src": 'images/white-project/photoshoot-3.jpg',
     "title": 'Photoshoot 3'
   }],
+  "PhotoshootIcons": [{
+    "src": 'images/white-project/photoshoot-icon-1.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/white-project/photoshoot-icon-2.jpg',
+    "title": 'Photoshoot 2'
+  }, {
+    "src": 'images/white-project/photoshoot-icon-3.jpg',
+    "title": 'Photoshoot 3'
+  }],
 	"Sketchbook": [{
     "src": 'images/white-project/research-1.jpg',
     "title": 'Research 1'
@@ -181,6 +300,19 @@ var PROJECTS_DATA = [{
     "title": 'Research 3'
   }, {
     "src": 'images/white-project/research-4.jpg',
+    "title": 'Research 4'
+  }],
+  "SketchIcons": [{
+    "src": 'images/white-project/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/white-project/research-icon-2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/white-project/research-icon-3.jpg',
+    "title": 'Research 3'
+  }, {
+    "src": 'images/white-project/research-icon-4.jpg',
     "title": 'Research 4'
   }]
 }, {
@@ -197,6 +329,13 @@ var PROJECTS_DATA = [{
     "src": 'images/floge/photoshoot2.jpg',
     "title": 'Pic 2'
   }],
+  "PhotoshootIcons": [{
+    "src": 'images/floge/photoshoot-icon-1.jpg',
+    "title": 'Pic 1'
+  }, {
+    "src": 'images/floge/photoshoot-icon-2.jpg',
+    "title": 'Pic 2'
+  }],
 	"Sketchbook": [{
     "src": 'images/floge/research1.jpg',
     "title": 'Research 1'
@@ -205,6 +344,16 @@ var PROJECTS_DATA = [{
     "title": 'Research 2'
   }, {
     "src": 'images/floge/research3.jpg',
+    "title": 'Research 3'
+  }],
+  "SketchIcons": [{
+    "src": 'images/floge/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/floge/research-icon-2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/floge/research-icon-3.jpg',
     "title": 'Research 3'
   }]
 }]

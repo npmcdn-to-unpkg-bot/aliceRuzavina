@@ -31,6 +31,9 @@
                 <img src="images/right-arrow.png" />
             </a>
         </div>
+        <div class="icons">
+            <img ng-repeat="icon in ctrl.photoshootIcons" src="{{icon.src}}" ng-style="icon.Status === 'active' && {'opacity': '0.2'}">
+        </div>
     <div class="border-bottom"><img src="{{ctrl.project.Border}}"></div>
     </section>
 
@@ -50,7 +53,9 @@
                 <img src="images/right-arrow.png" />
             </a>
         </div>
-        
+        <div class="icons">
+            <img ng-repeat="sketchIcon in ctrl.sketchIcons" src="{{sketchIcon.src}}" ng-style="sketchIcon.Status === 'active' && {'opacity': '0.2'}">
+        </div>
         <div class="border-bottom"><img src="{{ctrl.project.Border}}"></div>
     </section>
 
