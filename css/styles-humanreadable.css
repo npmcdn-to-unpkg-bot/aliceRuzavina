@@ -431,6 +431,10 @@ ul {
   list-style-image: url("../images/dot.png");
 }
 
+p.cursive {
+  font-style: italic;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -465,10 +469,6 @@ ul {
   left: 1em;
 }
 
-.back-to-home-fixed:hover {
-  width: 5em;
-}
-
 .back-arrow-fixed {
   position: fixed;
   bottom: 1.5em;
@@ -485,10 +485,6 @@ ul {
 
 .back-arrow:hover {
   opacity: 0.3;
-}
-
-.back-arrow-fixed:hover {
-  width: 5em;
 }
 
 .sm:hover {
@@ -990,8 +986,10 @@ ul {
 .home .important a.fashion-icon img {
   width: 80%;
 }
-.home .important a.about-icon img:hover, .home .important a.fashion-icon img:hover {
-  opacity: 0.3;
+@media only screen and (min-width: 60.625em) {
+  .home .important a.about-icon img:hover, .home .important a.fashion-icon img:hover {
+    opacity: 0.3;
+  }
 }
 .home .less-important a.textile-icon img {
   width: 50%;
@@ -1009,8 +1007,10 @@ ul {
   width: 60%;
   margin-bottom: 1em;
 }
-.home .less-important a.textile-icon img:hover, .home .less-important a.illustration-icon img:hover, .home .less-important a.artwork-icon img:hover, .home .less-important a.photography-icon img:hover {
-  opacity: 0.3;
+@media only screen and (min-width: 60.625em) {
+  .home .less-important a.textile-icon img:hover, .home .less-important a.illustration-icon img:hover, .home .less-important a.artwork-icon img:hover, .home .less-important a.photography-icon img:hover {
+    opacity: 0.3;
+  }
 }
 @media only screen and (min-width: 30em) and (max-width: 60.625em) {
   .home {
@@ -1441,11 +1441,13 @@ footer.project-footer, footer.other-footer {
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-.fashion .grid .project-icon:hover .overlay {
-  display: block;
-}
-.fashion .grid .project-icon:hover .project-image {
-  opacity: 0.25;
+@media only screen and (min-width: 60.625em) {
+  .fashion .grid .project-icon:hover .overlay {
+    display: block;
+  }
+  .fashion .grid .project-icon:hover .project-image {
+    opacity: 0.25;
+  }
 }
 .fashion .grid img {
   border-radius: 2em;
@@ -1505,15 +1507,18 @@ footer.project-footer, footer.other-footer {
   display: inline-block;
   margin-bottom: 0.25em;
 }
-.project .page-navigation a img:hover {
-  opacity: 0.3;
+@media only screen and (min-width: 60.625em) {
+  .project .page-navigation a img:hover {
+    opacity: 0.3;
+  }
 }
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 60.625em) and (min-width: 50em) {
   .project .page-navigation a img:hover {
     opacity: 1;
     height: 3em;
   }
 }
+
 .project .concept {
   margin-top: 2.5em;
   margin-bottom: 3.5em;
@@ -1601,14 +1606,6 @@ footer.project-footer, footer.other-footer {
   margin-left: 1%;
   margin-right: 1%;
 }
-.photo-carousel .border-bottom {
-  margin-top: 3em;
-}
-@media only screen and (min-width: 38em) and (max-width: 60.625em) {
-  .photo-carousel .border-bottom {
-    margin-top: 4em;
-  }
-}
 @media only screen and (min-width: 60.625em) {
   .photo-carousel .border-bottom {
     margin-top: 0.5em;
@@ -1637,20 +1634,30 @@ footer.project-footer, footer.other-footer {
   }
 }
 
+.arrows, .arrows-sketches {
+  margin-top: 0.65em;
+}
+@media only screen and (min-width: 60.625em) {
+  .arrows, .arrows-sketches {
+    margin-top: 0;
+  }
+}
 .arrows .previous, .arrows .next, .arrows-sketches .previous, .arrows-sketches .next {
   width: 2em;
-  position: absolute;
-  bottom: 2em;
-  margin-top: 0.2em;
+  position: relative;
 }
-@media only screen and (min-width: 38em) and (max-width: 60.625em) {
-  .arrows .previous, .arrows .next, .arrows-sketches .previous, .arrows-sketches .next {
-    bottom: 3.5em;
-  }
+.arrows .previous img, .arrows .next img, .arrows-sketches .previous img, .arrows-sketches .next img {
+  width: 2em;
+  height: auto;
 }
 @media only screen and (min-width: 60.625em) {
   .arrows .previous, .arrows .next, .arrows-sketches .previous, .arrows-sketches .next {
-    bottom: 45%;
+    position: absolute;
+    bottom: 55%;
+  }
+  .arrows .previous img, .arrows .next img, .arrows-sketches .previous img, .arrows-sketches .next img {
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (min-width: 64em) {
@@ -1658,34 +1665,34 @@ footer.project-footer, footer.other-footer {
     width: 3em;
   }
 }
-.arrows .previous img, .arrows .next img, .arrows-sketches .previous img, .arrows-sketches .next img {
-  width: 100%;
-  height: auto;
-}
 .arrows .previous, .arrows-sketches .previous {
-  left: 35%;
+  margin-right: 0.65em;
 }
 @media only screen and (min-width: 60.625em) and (max-width: 64em) {
   .arrows .previous, .arrows-sketches .previous {
     left: 5%;
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 64em) {
   .arrows .previous, .arrows-sketches .previous {
     left: 7%;
+    margin-right: 0;
   }
 }
 .arrows .next, .arrows-sketches .next {
-  right: 35%;
+  margin-left: 0.65em;
 }
 @media only screen and (min-width: 60.625em) and (max-width: 64em) {
   .arrows .next, .arrows-sketches .next {
     right: 5%;
+    margin-left: 0.65em;
   }
 }
 @media only screen and (min-width: 64em) {
   .arrows .next, .arrows-sketches .next {
     right: 7%;
+    margin-left: 0.65em;
   }
 }
 .arrows .previous:hover, .arrows .next:hover, .arrows-sketches .previous:hover, .arrows-sketches .next:hover {
@@ -1702,15 +1709,34 @@ footer.project-footer, footer.other-footer {
 }
 
 .icons {
-  margin-top: 1.5em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+@media only screen and (min-width: 38em) {
+  .icons {
+    margin-top: 0.65em;
+  }
+}
+@media only screen and (min-width: 60.625em) {
+  .icons {
+    width: 70%;
+  }
 }
 .icons img {
-  margin-left: 1.25em;
-  width: 4em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-top: 0.65em;
+  width: 3em;
   height: auto;
 }
-.icons .active-icon {
-  opacity: 0.2;
+@media only screen and (min-width: 38em) {
+  .icons img {
+    margin-left: 0.65em;
+    margin-right: 0.65em;
+    width: 4em;
+  }
 }
 
 .slide.ng-hide-add,

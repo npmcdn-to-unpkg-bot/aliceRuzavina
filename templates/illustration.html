@@ -13,6 +13,7 @@
 
 <main class="other">
 	<section class="photo-carousel slider">
+        <div class="border-top"><img src="images/illustration/ill-border.png"></div>
 		<img  class="image-carousel" ng-repeat="image in images" class="img-carousel" ng-show="image.visible" src="{{image.src}}">
 		<div class="arrows">
             <a class="previous" ng-click="prev()">
@@ -22,6 +23,10 @@
                 <img src="images/right-arrow.png" />
             </a>
         </div>
+        <div class="icons">
+            <img  class="image-carousel" ng-repeat="iconIll in images" class="img-carousel" src="{{iconIll.srcIcon}}" ng-style="iconIll.Status === 'active' && {'opacity': '0.2'}" ng-click="changeIll(iconIll)">
+        </div>
+        <div class="border-bottom"><img src="images/illustration/ill-border.png"></div>
 	</section>
 </main>
 

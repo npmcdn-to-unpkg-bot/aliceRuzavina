@@ -27,6 +27,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-slick": "^0.2.1"
+    "angular-slick": "^0.2.1",
+    "angular-masonry": "^0.16.0"
   }
 }

@@ -18,7 +18,7 @@
     <nav class="page-navigation">
         <a class="pointer" ng-click="ctrl.gotoPhotoshoot()" ng-hide="ctrl.project.seen"><img src="images/photoshoot.png"></a>
         <a class="pointer" ng-click="ctrl.gotoConcept()"><img src="images/about-title.png"></a>
-        <a class="pointer" ng-click="ctrl.gotoSketchbook()"><img src="images/dd.png"></a>
+        <a class="pointer" ng-click="ctrl.gotoSketchbook()" ng-hide="ctrl.project.seenSketch"><img src="images/dd.png"></a>
     </nav>
     <section class="photo-carousel slider" id="photoshoot" ng-hide="ctrl.project.seen">
     <div class="border-top"><img src="{{ctrl.project.Border}}"></div>
@@ -32,7 +32,7 @@
             </a>
         </div>
         <div class="icons">
-            <img ng-repeat="icon in ctrl.photoshootIcons" src="{{icon.src}}" ng-style="icon.Status === 'active' && {'opacity': '0.2'}">
+            <img ng-repeat="icon in ctrl.photoshootIcons" src="{{icon.src}}" ng-style="icon.Status === 'active' && {'opacity': '0.2'}" ng-click="ctrl.clickIcon(icon)">
         </div>
     <div class="border-bottom"><img src="{{ctrl.project.Border}}"></div>
     </section>
@@ -42,9 +42,9 @@
         <div ng-include="ctrl.project.Concept"></div>
     </section>
 
-    <section class="photo-carousel sketchbook" id="sketchbook">
+    <section class="photo-carousel sketchbook" id="sketchbook" ng-hide="ctrl.project.seenSketch">
         <div class="border-top"><img src="{{ctrl.project.Border}}"></div>
-                <img class="image-carousel" ng-repeat="sketch in ctrl.sketchbook" class="img-carousel" src="{{sketch.src}}" ng-show="sketch.visible">    
+            <img class="image-carousel" ng-repeat="sketch in ctrl.sketchbook" class="img-carousel" src="{{sketch.src}}" ng-show="sketch.visible">    
         <div class="arrows">
             <a class="previous" ng-click="ctrl.previousSketch()">
                 <img src="images/left-arrow.png" />
@@ -54,7 +54,7 @@
             </a>
         </div>
         <div class="icons">
-            <img ng-repeat="sketchIcon in ctrl.sketchIcons" src="{{sketchIcon.src}}" ng-style="sketchIcon.Status === 'active' && {'opacity': '0.2'}">
+            <img ng-repeat="sketchIcon in ctrl.sketchIcons" src="{{sketchIcon.src}}" ng-style="sketchIcon.Status === 'active' && {'opacity': '0.2'}" ng-click="ctrl.clickIconSketch(sketchIcon)">
         </div>
         <div class="border-bottom"><img src="{{ctrl.project.Border}}"></div>
     </section>

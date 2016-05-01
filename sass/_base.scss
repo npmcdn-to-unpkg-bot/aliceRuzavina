@@ -28,6 +28,9 @@ img {
 ul {
     list-style-image: url('../images/dot.png');
 }
+p.cursive {
+  	font-style: italic;
+}
 .pointer {
 	cursor: pointer;
 }
@@ -55,9 +58,6 @@ ul {
 .two {
     left: 1em;
 }
-.back-to-home-fixed:hover {
-	width: 5em;
-}
 .back-arrow-fixed {
 	position: fixed;
    	bottom: 1.5em;
@@ -71,9 +71,6 @@ ul {
 }
 .back-arrow:hover {
 	opacity: 0.3;
-}
-.back-arrow-fixed:hover {
-    width: 5em;
 }
 .sm:hover {
 	opacity: 0.25;
@@ -517,8 +514,10 @@ ul {
 		a.fashion-icon img {
 			width: 80%;
 		}
-		a.about-icon img:hover, a.fashion-icon img:hover {
-			opacity: 0.3;
+		@include break(60.625em) {
+			a.about-icon img:hover, a.fashion-icon img:hover {
+				opacity: 0.3;
+			}
 		}
 	}
 	.less-important {
@@ -538,8 +537,10 @@ ul {
 			width: $half + 10%;
 			margin-bottom: 1em;
 		}
-				a.textile-icon img:hover, a.illustration-icon img:hover, a.artwork-icon img:hover, a.photography-icon img:hover {
-			opacity: 0.3;
+		@include break(60.625em) {
+			a.textile-icon img:hover, a.illustration-icon img:hover, a.artwork-icon img:hover, a.photography-icon img:hover {
+				opacity: 0.3;
+			}
 		}
 	}
 	@include break(30em, 60.625em) {
@@ -888,12 +889,14 @@ footer.project-footer, footer.other-footer {
             transition: opacity 0.5s ease-in-out;
 		}
 		.project-icon:hover {
+			@include break(60.625em) {
 			.overlay {
 				display: block;
 			}
 			.project-image {
 				opacity: 0.25;
 			}
+		    }
 		}
 		img {
 			border-radius: 2em;
@@ -942,11 +945,13 @@ footer.project-footer, footer.other-footer {
 			display: inline-block;
 			margin-bottom: 0.25em;
 		}
-		a img:hover {
-			opacity: 0.3;
-			@include break(50em) {
-				opacity: 1;
-			    height: 3em;
+		@include break(60.625em) {
+			a img:hover {
+				opacity: 0.3;
+				@include break(50em) {
+					opacity: 1;
+			    	height: 3em;
+				}
 			}
 		}
 	}
@@ -1014,10 +1019,6 @@ footer.project-footer, footer.other-footer {
         }
 	}
 	.border-bottom {
-		margin-top: 3em;
-		@include break(38em, 60.625em) {
-			margin-top: 4em;
-		}
 		@include break(60.625em) {
 			margin-top: 0.5em;
 		}
@@ -1045,41 +1046,49 @@ footer.project-footer, footer.other-footer {
 	}
 }
 .arrows, .arrows-sketches {
+	margin-top: 0.65em;
+	@include break(60.625em) {
+		margin-top: 0;
+	}
 	.previous, .next {
 		width: 2em;
-		position: absolute;
-		bottom: 2em;
-		margin-top: 0.2em;
-		@include break(38em, 60.625em) {
-			bottom: 3.5em;
+		position: relative;
+		img {
+			width: 2em;
+			height: auto;
 		}
 		@include break(60.625em) {
-			bottom: 45%;
+			position: absolute;
+			bottom: 55%;
+			img {
+			    width: 100%;
+		 	    height: auto;
+		    }
 		}
 		@include break(64em) {
 			width: 3em;
 		}
-		img {
-			width: 100%;
-			height: auto;
-		}
 	}
 	.previous {
-		left: 35%;
+		margin-right: 0.65em;
 		@include break(60.625em, 64em) {
 			left: 5%;
+			margin-right: 0;
 		}
 		@include break(64em) {
 			left: 7%;
+			margin-right: 0;
 		}
 	}
     .next {
-		right: 35%;
+    	margin-left: 0.65em;
 		@include break(60.625em, 64em) {
 			right: 5%;
+			margin-left: 0.65em;
 		}
 		@include break(64em) {
 			right: 7%;
+			margin-left: 0.65em;
 		}
 	}
 	.previous:hover, .next:hover {
@@ -1093,15 +1102,28 @@ footer.project-footer, footer.other-footer {
 	position: relative;
 }
 
-.icons{
-    margin-top: 1.5em;
-	img {
-		margin-left: 1.25em;
-		width: 4em;
-        height: auto;
+.icons {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 0;
+    @include break(38em) {
+    	margin-top: 0.65em;
+    }
+   	@include break(60.625em) {
+        width: 70%;
 	}
-	.active-icon {
-		opacity: 0.2;
+	img {
+		margin-left: 0.25em;
+		margin-right: 0.25em;
+		margin-top: 0.65em;
+		width: 3em;
+        height: auto;
+        @include break(38em) {
+        	margin-left: 0.65em;
+		    margin-right: 0.65em;
+		    width: 4em;
+		}
 	}
 }
 

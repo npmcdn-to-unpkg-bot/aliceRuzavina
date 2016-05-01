@@ -169,8 +169,80 @@ var PROJECTS_DATA = [{
     "title": 'Research 3'
   }]
 }, {
+  "ID": "nike",
+  "seenSketch": true,
+  "Title": "Nike",
+  "TitleImage": "images/nike/nike-title.png",
+  "Border": "images/nike/nike-border.png",
+  "ProjectImage": "images/nike/main-nike.jpg",
+  "Concept": "descriptions/floge.html",
+  "Photoshoot": [{
+    "src": 'images/nike/01.gif',
+    "title": 'Pic 1'
+  }, {
+    "src": 'images/nike/02.gif',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/03.gif',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/04.gif',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/05.gif',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/07.gif',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/10.gif',
+    "title": 'Pic 2'
+  }],
+  "PhotoshootIcons": [{
+    "src": 'images/nike/01-icon.jpg',
+    "title": 'Pic 1'
+  }, {
+    "src": 'images/nike/02-icon.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/03-icon.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/04-icon.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/05-icon.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/07-icon.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/10-icon.jpg',
+    "title": 'Pic 2'
+  }],
+  "Sketchbook": [{
+    "src": 'images/floge/research1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/floge/research2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/floge/research3.jpg',
+    "title": 'Research 3'
+  }],
+  "SketchIcons": [{
+    "src": 'images/floge/research-icon-1.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/floge/research-icon-2.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/floge/research-icon-3.jpg',
+    "title": 'Research 3'
+  }]
+}, {
 	"ID": "accessory",
-	"Title": "Accessory Project",
+	"Title": "Accessory",
   "TitleImage": "images/accessory/accessory-title.png",
   "Border": "images/accessory/accessory-border.png",
 	"ProjectImage": "images/accessory/main-accessory.jpg",
@@ -223,7 +295,7 @@ var PROJECTS_DATA = [{
   }]
 }, {
 	"ID": "shirt",
-	"Title": "Shirt Project",
+	"Title": "Shirt",
   "TitleImage": "images/shirt/shirt-title.png",
   "Border": "images/shirt/shirt-border.png",
 	"ProjectImage": "images/shirt/main-shirt.jpg",
@@ -232,18 +304,12 @@ var PROJECTS_DATA = [{
     "src": 'images/shirt/photoshoot1.jpg',
     "title": 'Photoshoot 1'
   }, {
-    "src": 'images/shirt/photoshoot2.jpg',
-    "title": 'Photoshoot 2'
-  }, {
     "src": 'images/shirt/photoshoot3.jpg',
     "title": 'Photoshoot 3'
   }],
   "PhotoshootIcons": [{
     "src": 'images/shirt/photoshoot-icon-1.jpg',
     "title": 'Photoshoot 1'
-  }, {
-    "src": 'images/shirt/photoshoot-icon-2.jpg',
-    "title": 'Photoshoot 2'
   }, {
     "src": 'images/shirt/photoshoot-icon-3.jpg',
     "title": 'Photoshoot 3'
@@ -264,7 +330,7 @@ var PROJECTS_DATA = [{
   }]
 }, {
 	"ID": "white",
-	"Title": "White Project",
+	"Title": "White",
   "TitleImage": "images/white-project/white-title.png",
   "Border": "images/white-project/white-border.png",
 	"ProjectImage": "images/white-project/main-white.jpg",
@@ -317,7 +383,7 @@ var PROJECTS_DATA = [{
   }]
 }, {
 	"ID": "floge",
-	"Title": "Flöge Project",
+	"Title": "Becoming Flöge",
   "TitleImage": "images/floge/floge-title.png",
   "Border": "images/floge/floge-border.png",
 	"ProjectImage": "images/floge/main-floge.jpg",

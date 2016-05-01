@@ -17,7 +17,7 @@
          <li class="icon" ng-repeat="project in ctrl.projects" ng-click="ctrl.goToProject(project)">
             <a class="pointer">
                 <div class="project-icon">
-                  <img class="project-image" src="{{project.ProjectImage}}">
+                  <img class="project-image" ng-src="{{project.ProjectImage}}">
                   <div class="overlay">
                     <h2>{{ project.Title }}</h2>
                     <div class="eye"><img src="images/eye-animation.gif"></div>

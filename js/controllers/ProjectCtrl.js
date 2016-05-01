@@ -1,52 +1,3 @@
-// app.controller('ProjectCtrl', ['$scope', '$routeParams', '$location', 'ProjectService', '$anchorScroll', function(scope, $routeParams, $location, ProjectService, $anchorScroll) {
-// 	scope.ProjectService = ProjectService;
-// 	scope.project = scope.ProjectService.getProject($routeParams.projectId);
-// 	scope.photoshoot = scope.project.Photoshoot;
-// 	scope.sketchbook = scope.project.Sketchbook;
-// 	scope.currentIndex = 0;
-//     scope.gotoPhotoshoot= function() {
-//       $location.hash('photoshoot');
-//       $anchorScroll();
-//     };
-//     scope.gotoConcept = function() {
-//       $location.hash('concept');
-//       $anchorScroll();
-//     };
-//     scope.gotoSketchbook = function() {
-//       $location.hash('sketchbook');
-//       $anchorScroll();
-//     };
-
-
-// 	scope.next = function() {
-//         scope.currentIndex < scope.photoshoot.length - 1 ? scope.currentIndex++ : scope.currentIndex = 0;
-//     };
-//     scope.prev = function() {
-//         scope.currentIndex > 0 ? scope.currentIndex-- : scope.currentIndex = scope.photoshoot.length - 1;
-//     };
-//     scope.$watch('currentIndex', function() {
-//         scope.photoshoot.forEach(function(photo) {
-//         photo.visible = false; // make every image invisible
-//         });
-//         scope.photoshoot[scope.currentIndex].visible = true;
-//     });
-//     scope.currentIndexSketch = 0;
-
-
-//     scope.nextSketch = function() {
-//         scope.currentIndexSketch < scope.sketchbook.length - 1 ? scope.currentIndexSketch++ : scope.currentIndexSketch = 0;
-//     };
-//     scope.prevSketch = function() {
-//         scope.currentIndexSketch > 0 ? scope.currentIndexSketch-- : scope.currentIndexSketch = scope.sketchbook.length - 1;
-//     };
-//     scope.$watch('currentIndexSketch', function() {
-//         scope.sketchbook.forEach(function(sketch) {
-//             sketch.visible = false; // make every image invisible
-//         });
-//         scope.sketchbook[scope.currentIndexSketch].visible = true;
-//     });
-// }])
-
 angular.module('alice').controller('ProjectCtrl', ProjectCtrl);
 
 function ProjectCtrl($routeParams, $location, ProjectService, $anchorScroll) {
@@ -83,16 +34,31 @@ ProjectCtrl.prototype.changeIconSketch = function() {
         this.project.SketchIcons[i].Status = 'none';
     }
     this.sketchIcons[this.currentIndexSketch].Status = 'active'; 
-    console.log(this.sketchIcons[this.currentIndexSketch]); 
 }
 
-ProjectCtrl.prototype.watch = function(image) {
-    this.photoshoot.forEach(function(image) {
-        photo.visible = false; // make every image invisible
-    });
-    this.photoshoot[this.currentIndex].visible = true;
+ProjectCtrl.prototype.clickIcon = function(img) {
+    this.img = img;
+    this.currentIndex = this.photoshootIcons.indexOf(this.img);
+    for(i = 0; i<this.photoshoot.length; i++) {
+        this.photoshoot[i].visible = false;
+        this.photo.visible = this.project.Photoshoot[i].visible;
+    }
+    this.photo = this.project.Photoshoot[this.currentIndex];
+    this.photo.visible = true;
+    this.changeIcon();
 }
 
+ProjectCtrl.prototype.clickIconSketch = function(sktch) {
+    this.sktch = sktch;
+    this.currentIndexSketch = this.sketchIcons.indexOf(this.sktch);
+    for(i = 0; i<this.sketchbook.length; i++) {
+        this.sketchbook[i].visible = false;
+        this.sketch.visible = this.project.Sketchbook[i].visible;
+    }
+    this.sketch = this.project.Sketchbook[this.currentIndexSketch];
+    this.sketch.visible = true;
+    this.changeIconSketch();
+}
 
 ProjectCtrl.prototype.next = function() {
     if(this.currentIndex >= (this.photoshoot.length - 1)) {
