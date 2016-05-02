@@ -175,7 +175,7 @@ var PROJECTS_DATA = [{
   "TitleImage": "images/nike/nike-title.png",
   "Border": "images/nike/nike-border.png",
   "ProjectImage": "images/nike/main-nike.jpg",
-  "Concept": "descriptions/floge.html",
+  "Concept": "descriptions/nike.html",
   "Photoshoot": [{
     "src": 'images/nike/01.gif',
     "title": 'Pic 1'

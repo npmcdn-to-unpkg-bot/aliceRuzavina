@@ -27,18 +27,6 @@ app.controller('IllustrationCtrl', ['$scope', '$routeParams', '$location', funct
     console.log('ill');
 }])
 
-// ProjectCtrl.prototype.clickIcon = function(img) {
-//     this.img = img;
-//     this.currentIndex = this.photoshootIcons.indexOf(this.img);
-//     for(i = 0; i<this.photoshoot.length; i++) {
-//         this.photoshoot[i].visible = false;
-//         this.photo.visible = this.project.Photoshoot[i].visible;
-//     }
-//     this.photo = this.project.Photoshoot[this.currentIndex];
-//     this.photo.visible = true;
-//     this.changeIcon();
-// }
-
 var ILLUSTRATION_DATA = [{
     src: 'images/illustration/ill-01.jpg',
     srcIcon: 'images/illustration/ill-01-icon.jpg'

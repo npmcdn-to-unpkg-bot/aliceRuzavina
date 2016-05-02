@@ -8,5 +8,4 @@ function HomeCtrl($routeParams, $location, $scope) {
 HomeCtrl.prototype.reloadPage = function() {
 	console.log("works");
     window.location.reload();
-
 }
