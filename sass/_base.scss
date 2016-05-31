@@ -86,7 +86,7 @@ p.cursive {
 	width: 98%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0.5em;
+	padding-top: 0.5em;
 	text-align: center;
 	@include break(38em) {
 		width: 100%;
@@ -491,6 +491,10 @@ p.cursive {
     }
 }
 
+.main-background {
+	background-image: url("../images/main-background.png");
+}
+
 .home {
 	nav {
 		overflow: hidden;
@@ -661,7 +665,7 @@ p.cursive {
 footer.site-info {
     text-align: center;
     margin-top: 2em;
-    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
     @include break(60.625em, 90.625em) {
     	margin-top: 0em;
     }
@@ -682,7 +686,7 @@ footer.project-footer, footer.other-footer {
 	}
 }
 
-.fashion, .about, .project, .other {
+.about, .project, .other {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -695,11 +699,19 @@ footer.project-footer, footer.other-footer {
 	    margin-top: 13.5em;
 	}
 }
+.fashion-background {
+    background-image: url("../images/fashion-background.png");
+}
 .fashion {
+	width: 100%;
+	position: relative;
+	padding-top: 8.5em;
 	@include break(90.625em) {
-	    margin-top: 11em;
+	    padding-top: 11em;
 	}
-
+	@include break(60.625em, 90.625em) {
+		padding-top: 10.5em;
+	}
 }
 .other {
 	width: 100%;
@@ -719,6 +731,40 @@ footer.project-footer, footer.other-footer {
     	margin-right: auto;
 	}
 }
+.background-about {
+	@include break(0, 60.625em) {
+		display: none;
+	}
+	@include break(56.25em) {
+		.left-decor, .right-decor {
+			display: block;
+			position: fixed;
+    		width: 10%;
+    		margin-left: 5%;
+    		top: 9em;
+		}
+		.right-decor {
+			right: 0;
+			margin-left: 0%;
+			margin-right: 5%;
+		}
+	}
+	@include break(90.625em) {
+		.left-decor, .right-decor {
+			display: block;
+			position: fixed;
+    		width: 10%;
+    		margin-left: 5%;
+    		top: 13.5em;
+		}
+		.right-decor {
+			right: 0;
+			margin-left: 0%;
+			margin-right: 5%;
+		}
+	}
+}
+
 .about {
 	width: 95%;
 	@include break(30em, 38em) {
@@ -729,6 +775,12 @@ footer.project-footer, footer.other-footer {
 	}
 	@include break(56.25em) {
 		width: 60%;
+		.background-about {
+			img {
+				width: 15%;
+				position: fixed;
+			}
+		}
 	}
 	.alice-photo, .bio {
 		display: block;
@@ -738,7 +790,7 @@ footer.project-footer, footer.other-footer {
 	}
 	.alice-photo {
 		text-align: center;
-        width: 60%;
+        width: 80%;
         margin-right: auto;
 		margin-left: auto;
 		@include break(30em, 45em) {
@@ -834,15 +886,23 @@ footer.project-footer, footer.other-footer {
 
 .fashion {
 	width: 90%;
+	padding-right: 5%;
+	padding-left: 5%;
 	text-align: center;
 	@include break(30em, 38em) {
 		width: 60%;
+		padding-right: 20%;
+		padding-left: 20%;
 	}
 	@include break(38em, 56.25em) {
+		padding-right: 10%;
+		padding-left: 10%;
 		width: 80%;
 	}
 	@include break(56.25em) {
 		width: 70%;
+		padding-right: 15%;
+		padding-left: 15%;
 	}
 	.grid {
 		overflow: hidden;

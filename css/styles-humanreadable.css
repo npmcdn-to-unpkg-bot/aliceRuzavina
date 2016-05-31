@@ -503,7 +503,7 @@ p.cursive {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.5em;
+  padding-top: 0.5em;
   text-align: center;
 }
 @media only screen and (min-width: 38em) {
@@ -961,6 +961,10 @@ p.cursive {
   }
 }
 
+.main-background {
+  background-image: url("../images/main-background.png");
+}
+
 .home {
   width: 90%;
   height: auto;
@@ -1153,7 +1157,7 @@ p.cursive {
 footer.site-info {
   text-align: center;
   margin-top: 2em;
-  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 @media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
   footer.site-info {
@@ -1181,7 +1185,7 @@ footer.project-footer, footer.other-footer {
   }
 }
 
-.fashion, .about, .project, .other {
+.about, .project, .other {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1189,19 +1193,33 @@ footer.project-footer, footer.other-footer {
   margin-top: 8.5em;
 }
 @media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
-  .fashion, .about, .project, .other {
+  .about, .project, .other {
     margin-top: 10.5em;
   }
 }
 @media only screen and (min-width: 90.625em) {
-  .fashion, .about, .project, .other {
+  .about, .project, .other {
     margin-top: 13.5em;
   }
 }
 
+.fashion-background {
+  background-image: url("../images/fashion-background.png");
+}
+
+.fashion {
+  width: 100%;
+  position: relative;
+  padding-top: 8.5em;
+}
 @media only screen and (min-width: 90.625em) {
   .fashion {
-    margin-top: 11em;
+    padding-top: 11em;
+  }
+}
+@media only screen and (min-width: 60.625em) and (max-width: 90.625em) {
+  .fashion {
+    padding-top: 10.5em;
   }
 }
 
@@ -1228,6 +1246,40 @@ footer.project-footer, footer.other-footer {
   }
 }
 
+@media only screen and (min-width: 0) and (max-width: 60.625em) {
+  .background-about {
+    display: none;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .background-about .left-decor, .background-about .right-decor {
+    display: block;
+    position: fixed;
+    width: 10%;
+    margin-left: 5%;
+    top: 9em;
+  }
+  .background-about .right-decor {
+    right: 0;
+    margin-left: 0%;
+    margin-right: 5%;
+  }
+}
+@media only screen and (min-width: 90.625em) {
+  .background-about .left-decor, .background-about .right-decor {
+    display: block;
+    position: fixed;
+    width: 10%;
+    margin-left: 5%;
+    top: 13.5em;
+  }
+  .background-about .right-decor {
+    right: 0;
+    margin-left: 0%;
+    margin-right: 5%;
+  }
+}
+
 .about {
   width: 95%;
 }
@@ -1245,6 +1297,10 @@ footer.project-footer, footer.other-footer {
   .about {
     width: 60%;
   }
+  .about .background-about img {
+    width: 15%;
+    position: fixed;
+  }
 }
 .about .alice-photo, .about .bio {
   display: block;
@@ -1256,7 +1312,7 @@ footer.project-footer, footer.other-footer {
 }
 .about .alice-photo {
   text-align: center;
-  width: 60%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1365,21 +1421,29 @@ footer.project-footer, footer.other-footer {
 
 .fashion {
   width: 90%;
+  padding-right: 5%;
+  padding-left: 5%;
   text-align: center;
 }
 @media only screen and (min-width: 30em) and (max-width: 38em) {
   .fashion {
     width: 60%;
+    padding-right: 20%;
+    padding-left: 20%;
   }
 }
 @media only screen and (min-width: 38em) and (max-width: 56.25em) {
   .fashion {
+    padding-right: 10%;
+    padding-left: 10%;
     width: 80%;
   }
 }
 @media only screen and (min-width: 56.25em) {
   .fashion {
     width: 70%;
+    padding-right: 15%;
+    padding-left: 15%;
   }
 }
 .fashion .grid {
