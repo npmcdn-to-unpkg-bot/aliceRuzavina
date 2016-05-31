@@ -14,6 +14,90 @@ ProjectService.prototype.getProject = function(id) {
 }
 
 var PROJECTS_DATA = [{
+  "ID": "digital",
+  "Title": "Digital",
+  "TitleImage": "images/digital/digital-title.png",
+  "Border": "images/digital/digital-border.png",
+  "ProjectImage": "images/digital/main-digital.jpg",
+  "Concept": "descriptions/digital.html",
+  "Photoshoot": [{
+    "src": 'images/digital/photoshoot-01.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/digital/photoshoot-02.jpg',
+    "title": 'Photoshoot 2'
+  }],
+  "PhotoshootIcons": [{
+    "src": 'images/digital/photoshoot-icon-01.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/digital/photoshoot-icon-02.jpg',
+    "title": 'Photoshoot 2'
+  }],
+  "Sketchbook": [{
+    "src": 'images/digital/research-01.jpg',
+    "title": 'Research 1',
+    "style": "'color': 'yellow'"
+  }, {
+    "src": 'images/digital/research-02.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/digital/research-03.jpg',
+    "title": 'Research 3'
+  }, {
+    "src": 'images/digital/research-04.jpg',
+    "title": 'Research 4'
+  }],
+  "SketchIcons": [{
+    "src": 'images/digital/research-icon-01.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/digital/research-icon-02.jpg',
+    "title": 'Research 2'
+  }, {
+    "src": 'images/digital/research-icon-03.jpg',
+    "title": 'Research 3'
+  }, {
+    "src": 'images/digital/research-icon-04.jpg',
+    "title": 'Research 4'
+  }]
+}, {
+  "ID": "beady-eyes",
+  "Title": "Beady Eyes",
+  "TitleImage": "images/beady/beady-title.png",
+  "Border": "images/beady/beady-border.png",
+  "ProjectImage": "images/beady/main-beady.jpg",
+  "Concept": "descriptions/beady.html",
+  "fabricSamples": true,
+  "Photoshoot": [{
+    "src": 'images/beady/photoshoot-01.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/beady/photoshoot-02.jpg',
+    "title": 'Photoshoot 2'
+  }],
+  "PhotoshootIcons": [{
+    "src": 'images/beady/photoshoot-icon-01.jpg',
+    "title": 'Photoshoot 1'
+  }, {
+    "src": 'images/beady/photoshoot-icon-02.jpg',
+    "title": 'Photoshoot 2'
+  }],
+  "Sketchbook": [{
+    "src": 'images/beady/research-01.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/beady/research-02.jpg',
+    "title": 'Research 2'
+  }],
+  "SketchIcons": [{
+    "src": 'images/beady/research-icon-01.jpg',
+    "title": 'Research 1'
+  }, {
+    "src": 'images/beady/research-icon-02.jpg',
+    "title": 'Research 2'
+  }]
+}, {
 	"ID": "tailoring",
 	"Title": "Tailoring",
   "TitleImage": "images/tailoring/tailoring-title.png",
