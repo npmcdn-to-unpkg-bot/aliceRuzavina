@@ -212,7 +212,6 @@ var PROJECTS_DATA = [{
   }]
 }, {
 	"ID": "toile de joeux creatures",
-  "seen": true,
 	"Title": "Toile de Joeux Creatures",
   "TitleImage": "images/creatures/creatures-title2.png",
   "Border": "images/creatures/creatures-border.png",
@@ -241,6 +240,9 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/creatures/research-3.jpg',
     "title": 'Research 3'
+  }, {
+    "src": 'images/creatures/research-4.jpg',
+    "title": 'Research 4'
   }],
   "SketchIcons": [{
     "src": 'images/creatures/research-icon-1.jpg',
@@ -251,17 +253,20 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/creatures/research-icon-3.jpg',
     "title": 'Research 3'
+  }, {
+    "src": 'images/creatures/research-icon-4.jpg',
+    "title": 'Research 4'
   }]
 }, {
   "ID": "nike",
-  "seenSketch": true,
   "Title": "Nike",
   "TitleImage": "images/nike/nike-title.png",
   "Border": "images/nike/nike-border.png",
   "ProjectImage": "images/nike/main-nike.jpg",
   "Concept": "descriptions/nike.html",
+  "fabricSamples": true,
   "Photoshoot": [{
-    "src": 'images/nike/01.gif',
+    "src": 'images/nike/01.jpg',
     "title": 'Pic 1'
   }, {
     "src": 'images/nike/02.gif',
@@ -270,13 +275,22 @@ var PROJECTS_DATA = [{
     "src": 'images/nike/03.gif',
     "title": 'Pic 2'
   }, {
-    "src": 'images/nike/04.gif',
+    "src": 'images/nike/04.jpg',
     "title": 'Pic 2'
   }, {
     "src": 'images/nike/05.gif',
     "title": 'Pic 2'
   }, {
-    "src": 'images/nike/07.gif',
+    "src": 'images/nike/06.gif',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/07.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/08.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/09.gif',
     "title": 'Pic 2'
   }, {
     "src": 'images/nike/10.gif',
@@ -298,31 +312,46 @@ var PROJECTS_DATA = [{
     "src": 'images/nike/05-icon.jpg',
     "title": 'Pic 2'
   }, {
+    "src": 'images/nike/06-icon.jpg',
+    "title": 'Pic 2'
+  }, {
     "src": 'images/nike/07-icon.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/08-icon.jpg',
+    "title": 'Pic 2'
+  }, {
+    "src": 'images/nike/09-icon.jpg',
     "title": 'Pic 2'
   }, {
     "src": 'images/nike/10-icon.jpg',
     "title": 'Pic 2'
   }],
   "Sketchbook": [{
-    "src": 'images/floge/research1.jpg',
+    "src": 'images/nike/research1.jpg',
     "title": 'Research 1'
   }, {
-    "src": 'images/floge/research2.jpg',
+    "src": 'images/nike/research2.jpg',
     "title": 'Research 2'
   }, {
-    "src": 'images/floge/research3.jpg',
+    "src": 'images/nike/research3.jpg',
     "title": 'Research 3'
+  }, {
+    "src": 'images/nike/research4.jpg',
+    "title": 'Research 4'
   }],
   "SketchIcons": [{
-    "src": 'images/floge/research-icon-1.jpg',
+    "src": 'images/nike/research-icon-1.jpg',
     "title": 'Research 1'
   }, {
-    "src": 'images/floge/research-icon-2.jpg',
+    "src": 'images/nike/research-icon-2.jpg',
     "title": 'Research 2'
   }, {
-    "src": 'images/floge/research-icon-3.jpg',
+    "src": 'images/nike/research-icon-3.jpg',
     "title": 'Research 3'
+  }, {
+    "src": 'images/nike/research-icon-4.jpg',
+    "title": 'Research 4'
   }]
 }, {
 	"ID": "accessory",

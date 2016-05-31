@@ -107,39 +107,7 @@ var PHOTO_DATA = [{
     srcPhoto: 'images/photography/20-icon.jpg',
     title: 'Pic 3'
   }, {
-    src: 'images/photography/21.png',
-    srcPhoto: 'images/photography/21-icon.png',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/22.jpg',
-    srcPhoto: 'images/photography/22-icon.jpg',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/23.jpg',
-    srcPhoto: 'images/photography/23-icon.jpg',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/24.jpg',
-    srcPhoto: 'images/photography/24-icon.jpg',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/25.jpg',
-    srcPhoto: 'images/photography/25-icon.jpg',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/26.jpg',
-    srcPhoto: 'images/photography/26-icon.jpg',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/27.jpg',
-    srcPhoto: 'images/photography/27-icon.jpg',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/28.jpg',
-    srcPhoto: 'images/photography/28-icon.jpg',
-    title: 'Pic 3'
-  }, {
-    src: 'images/photography/29.jpg',
-    srcPhoto: 'images/photography/29-icon.jpg',
+    src: 'images/photography/21.jpg',
+    srcPhoto: 'images/photography/21-icon.jpg',
     title: 'Pic 3'
   }]

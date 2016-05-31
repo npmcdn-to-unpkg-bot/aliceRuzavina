@@ -16,10 +16,10 @@
 
 <main class="project">
     <nav class="page-navigation">
-        <a class="pointer" ng-click="ctrl.gotoPhotoshoot()" ng-hide="ctrl.project.seen"><img src="images/photoshoot.png"></a>
-        <a class="pointer" ng-click="ctrl.gotoConcept()"><img src="images/about-title.png"></a>
-        <a class="pointer" ng-click="ctrl.gotoSketchbook()" ng-hide="ctrl.project.seenSketch || ctrl.project.fabricSamples"><img src="images/dd.png"></a>
+        <a class="pointer" ng-click="ctrl.gotoPhotoshoot()" ng-hide="ctrl.project.seen || ctrl.project.fabricSamples"><img src="images/photoshoot.png"></a>
         <a class="pointer" ng-click="ctrl.gotoSketchbook()" ng-show="ctrl.project.fabricSamples"><img src="images/fs.png"></a>
+        <a class="pointer" ng-click="ctrl.gotoConcept()"><img src="images/about-title.png"></a>
+        <a class="pointer" ng-click="ctrl.gotoSketchbook()" ng-hide="ctrl.project.seenSketch"><img src="images/dd.png"></a>
     </nav>
     <section class="photo-carousel slider" id="photoshoot" ng-hide="ctrl.project.seen">
     <div class="border-top"><img src="{{ctrl.project.Border}}"></div>
