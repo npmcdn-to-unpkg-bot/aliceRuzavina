@@ -42,7 +42,7 @@ var ARTWORKS_DATA = [{
     srcIcon: 'images/artworks/04-icon.jpg',
     title: 'Pic 3'
   }, {
-    src: 'images/artworks/05.jpg',
+    src: 'images/artworks/05.png',
     srcIcon: 'images/artworks/05-icon.jpg',
     title: 'Pic 3'
   }, {
