@@ -12,7 +12,7 @@ app.controller('PhotographyCtrl', ['$scope', '$routeParams', '$location', functi
     };
     scope.changePhoto = function(photo) {
         scope.photo = photo;
-        scope.currentIndex = this.images.indexOf(scope.ill);
+        scope.currentIndex = this.images.indexOf(scope.photo);
         console.log(scope.currentIndex);
     }
     scope.$watch('currentIndex', function() {
