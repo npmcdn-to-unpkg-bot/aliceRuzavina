@@ -167,6 +167,9 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/bottega-veneta/photoshoot-3.jpg',
     "title": 'Photoshoot 3'
+  }, {
+    "src": 'images/bottega-veneta/photoshoot-4.jpg',
+    "title": 'Photoshoot 4'
   }],
   "PhotoshootIcons": [{
     "src": 'images/bottega-veneta/photoshoot-icon-1.jpg',
@@ -177,6 +180,9 @@ var PROJECTS_DATA = [{
   }, {
     "src": 'images/bottega-veneta/photoshoot-icon-3.jpg',
     "title": 'Photoshoot 3'
+  }, {
+    "src": 'images/bottega-veneta/photoshoot-icon-4.jpg',
+    "title": 'Photoshoot 4'
   }],
 	"Sketchbook": [{
     "src": 'images/bottega-veneta/research-1.jpg',
